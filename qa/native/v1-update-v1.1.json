@@ -1,0 +1,19 @@
+{
+  "package": "pl.trening.naukowo",
+  "sourceVersion": "1.0.0 (versionCode 1)",
+  "targetVersion": "1.1.0 (versionCode 2)",
+  "signerSha256": "9ea2c74118a6c2c73b81bce8d7bbe43112482ada4ca46ec74969ee9994f27707",
+  "offline": true,
+  "forceStopRestarted": true,
+  "retainedProgress": {
+    "key": "trening-naukowo-v1",
+    "active": {
+      "id": "biceps",
+      "mode": "learn"
+    },
+    "step": 0,
+    "readerCount": "1/6",
+    "heading": "Dwa ruchy, dwa różne pytania"
+  },
+  "verifiedAtUtc": "2026-09-30T20:04:38.319Z"
+}

@@ -1,0 +1,266 @@
+{
+  "tests": [
+    "Header previous step retains graded answer, shuffled option order and exact previous step across reload",
+    "Back preserves movement observation and unfinished Polish explanation; explicit Exit resumes exact step",
+    "System Back closes image first, then previous lesson step, then exits from step zero",
+    "Review permits backward study; completed review cannot record twice or return to editable result",
+    "All 20 theory sections display decoded teaching plates and definitions at 360px without overflow"
+  ],
+  "coverage": [
+    {
+      "id": "biceps",
+      "index": 0,
+      "plates": [
+        "movement",
+        "rotation"
+      ],
+      "terms": [
+        "Promieniowa",
+        "Łokciowa",
+        "Supinacja",
+        "Pronacja"
+      ]
+    },
+    {
+      "id": "biceps",
+      "index": 1,
+      "plates": [
+        "biceps-attachments",
+        "radius-reference",
+        "elbow-muscles"
+      ],
+      "terms": [
+        "Guzek nadpanewkowy",
+        "Wyrostek kruczy",
+        "Brzusiec",
+        "Ścięgno",
+        "Guzowatość kości promieniowej",
+        "Ramienny / ramienno-promieniowy"
+      ]
+    },
+    {
+      "id": "torque",
+      "index": 0,
+      "plates": [
+        "torque"
+      ],
+      "terms": [
+        "Oś łokcia",
+        "Linia działania siły",
+        "Prostopadłe ramię",
+        "Moment"
+      ]
+    },
+    {
+      "id": "torque",
+      "index": 1,
+      "plates": [
+        "press-attachments",
+        "press"
+      ],
+      "terms": [
+        "Obojczyk, mostek i żebra",
+        "Wyrostek łokciowy",
+        "Naramienny"
+      ]
+    },
+    {
+      "id": "sarcomere",
+      "index": 0,
+      "plates": [
+        "sarcomere",
+        "sliding-filaments"
+      ],
+      "terms": [
+        "Włókno mięśniowe",
+        "Sarkomer",
+        "Aktyna / miozyna"
+      ]
+    },
+    {
+      "id": "sarcomere",
+      "index": 1,
+      "plates": [
+        "calcium-atp"
+      ],
+      "terms": [
+        "Troponina",
+        "Tropomiozyna",
+        "Siateczka sarkoplazmatyczna",
+        "ATP / ADP / Pi"
+      ]
+    },
+    {
+      "id": "motor",
+      "index": 0,
+      "plates": [
+        "motor-labelled"
+      ],
+      "terms": [
+        "Neuron ruchowy",
+        "Akson",
+        "Jednostka motoryczna",
+        "Zasada wielkości"
+      ]
+    },
+    {
+      "id": "motor",
+      "index": 1,
+      "plates": [
+        "motor-labelled",
+        "motor-units"
+      ],
+      "terms": [
+        "Rekrutacja",
+        "Częstość pobudzeń",
+        "Sumowanie",
+        "Kompensacja"
+      ]
+    },
+    {
+      "id": "energy",
+      "index": 0,
+      "plates": [
+        "metabolism-labelled"
+      ],
+      "terms": [
+        "ATP / ADP",
+        "PCr",
+        "Glikoliza",
+        "Mitochondrium"
+      ]
+    },
+    {
+      "id": "energy",
+      "index": 1,
+      "plates": [
+        "press"
+      ],
+      "terms": [
+        "Pi",
+        "Mleczan"
+      ]
+    },
+    {
+      "id": "fuel",
+      "index": 0,
+      "plates": [
+        "fuel-labelled"
+      ],
+      "terms": [
+        "Glukoza",
+        "Glikogen",
+        "Wątroba / mięsień"
+      ]
+    },
+    {
+      "id": "fuel",
+      "index": 1,
+      "plates": [
+        "fuel-labelled"
+      ],
+      "terms": [
+        "Aminokwasy",
+        "Kwasy tłuszczowe",
+        "Kreatyna / PCr"
+      ]
+    },
+    {
+      "id": "adaptation",
+      "index": 0,
+      "plates": [
+        "adaptation-labelled"
+      ],
+      "terms": [
+        "Rybosom",
+        "Hipertrofia",
+        "Bilans białek"
+      ]
+    },
+    {
+      "id": "adaptation",
+      "index": 1,
+      "plates": [
+        "adaptation-labelled",
+        "sleep"
+      ],
+      "terms": [
+        "Badanie snu"
+      ]
+    },
+    {
+      "id": "testosterone",
+      "index": 0,
+      "plates": [
+        "hpg-labelled"
+      ],
+      "terms": [
+        "GnRH",
+        "LH",
+        "Komórki Leydiga"
+      ]
+    },
+    {
+      "id": "testosterone",
+      "index": 1,
+      "plates": [
+        "hpg-labelled"
+      ],
+      "terms": [
+        "Ujemne sprzężenie",
+        "Estradiol",
+        "Wynik badania West i wsp."
+      ]
+    },
+    {
+      "id": "signals",
+      "index": 0,
+      "plates": [
+        "signals",
+        "endocrine-labelled"
+      ],
+      "terms": [
+        "Insulina",
+        "Glukagon"
+      ]
+    },
+    {
+      "id": "signals",
+      "index": 1,
+      "plates": [
+        "endocrine-labelled"
+      ],
+      "terms": [
+        "Adrenalina",
+        "Kortyzol",
+        "T3 / T4",
+        "TRH / TSH"
+      ]
+    },
+    {
+      "id": "evidence",
+      "index": 0,
+      "plates": [
+        "evidence-labelled"
+      ],
+      "terms": [
+        "Korelacja",
+        "Randomizacja",
+        "Zakres wniosku"
+      ]
+    },
+    {
+      "id": "evidence",
+      "index": 1,
+      "plates": [
+        "evidence-labelled",
+        "learning"
+      ],
+      "terms": [
+        "Wskaźnik pośredni",
+        "Powtórki"
+      ]
+    }
+  ],
+  "errors": []
+}

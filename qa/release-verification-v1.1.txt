@@ -1,0 +1,14 @@
+Trening Naukowo 1.1.0 / versionCode 2
+SHA256: 873b5a26d21f79a2615770e3047bf6fe58ffbbf4b48e84ed8b93b8d1311aea15
+Bytes: 35641768
+Signature v2/v3 verified; certificate unchanged: 9ea2c74118a6c2c73b81bce8d7bbe43112482ada4ca46ec74969ee9994f27707
+zipalign verification passed. minSdk 26 / targetSdk 35 / compileSdk 36.
+All 27 APK assets match current files byte for byte (qa/final-asset-verification.json).
+Native API35 airplane-mode check: all20 PNG/WebP decoded; zoom and physical Back passed (qa/native/native-check-v1.1.json).
+Actual v1.0 -> v1.1 update retained interrupted lesson across force-stop/restart (qa/native/v1-update-v1.1.json).
+Polish note retained exactly in storage and textarea across force-stop/restart (qa/native/text-restart-v1.1.json).
+Keyboard visible; viewport resized 867 -> 578; footer above IME (qa/native/keyboard-v1.1.json).
+Final non-debug release installed and launched offline; no DEBUGGABLE flag or WebView debug socket (qa/native/release-package-v1.1.txt, final-release-v1.1.png).
+Full10lesson web flow and92image-screen checks passed (qa/report.json, qa/art/report.json).
+Owned emulator-5586 and own9223 forward stopped; only checked workspace qa/avd removed. Other AVDs untouched.
+Physical Samsung S24 Ultra was not tested.

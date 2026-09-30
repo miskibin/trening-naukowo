@@ -1,0 +1,46 @@
+{
+  "before": {
+    "innerHeight": 867,
+    "viewportHeight": 867.047607421875,
+    "devicePixelRatio": 2.625,
+    "textarea": {
+      "x": 23,
+      "y": 418.4285888671875,
+      "width": 366.19049072265625,
+      "height": 150,
+      "top": 418.4285888671875,
+      "right": 389.19049072265625,
+      "bottom": 568.4285888671875,
+      "left": 23
+    },
+    "footer": {
+      "x": 23,
+      "y": 752.4285888671875,
+      "width": 366.19049072265625,
+      "height": 84.76190948486328,
+      "top": 752.4285888671875,
+      "right": 389.19049072265625,
+      "bottom": 837.1904983520508,
+      "left": 23
+    }
+  },
+  "after": {
+    "innerHeight": 578,
+    "viewportHeight": 578.2857055664062,
+    "devicePixelRatio": 2.625,
+    "activeTag": "TEXTAREA",
+    "footer": {
+      "x": 23,
+      "y": 493.5238037109375,
+      "width": 366.19049072265625,
+      "height": 84.76190948486328,
+      "top": 493.5238037109375,
+      "right": 389.19049072265625,
+      "bottom": 578.2857131958008,
+      "left": 23
+    }
+  },
+  "keyboardVisible": true,
+  "footerAboveIme": true,
+  "testedAtUtc": "2026-09-30T20:06:14.065Z"
+}

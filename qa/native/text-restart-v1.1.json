@@ -1,0 +1,16 @@
+{
+  "forceStopRestarted": true,
+  "offline": true,
+  "retained": {
+    "key": "trening-naukowo-v1",
+    "active": {
+      "id": "biceps",
+      "mode": "learn"
+    },
+    "step": 4,
+    "text": "Moja notatka: napięcie zależy od kąta i ramienia momentu siły.",
+    "textarea": "Moja notatka: napięcie zależy od kąta i ramienia momentu siły.",
+    "readerCount": "5/6"
+  },
+  "verifiedAtUtc": "2026-09-30T20:12:06.097Z"
+}

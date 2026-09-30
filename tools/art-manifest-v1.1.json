@@ -1,0 +1,86 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "biceps",
+      "prompt": "Create one polished medical textbook illustration for an adult mobile anatomy course, landscape 3:2, white background, refined realistic medical painting, calm muted red muscle fibers, pearly tendons. A single supinated right upper limb from shoulder/scapula to relaxed palm, anterior oblique view. Biceps brachii two proximal heads originate on scapula: long at supraglenoid region and short at coracoid; shared distal tendon inserts on radial tuberosity BELOW radial head, NOT the round articular head itself, NOT on ulna. Show humerus, radius (thumb side) and ulna with realistic contours and joints. Large readable structures, simplified surrounding tissue so the biceps path is clear. Elbow slightly flexed. No comparison panel, no arrows, no text or letters or labels or invented charts. No stylized pipe bones, no toy render, no extra digits. Illustration to teach attachment, not a clinical image.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-62b59b52-459f-45c5-b28a-4207330ae4a0.png"
+    },
+    {
+      "id": "movement",
+      "prompt": "Create a sophisticated physiotherapy textbook illustration on white, landscape 3:2. Two equal panels of the SAME adult man seated upright in a grey T shirt, right elbow flexed 90 degrees close to torso, upper arm vertical and forearm horizontal extending forward. Left panel right palm upward with fingers naturally relaxed, right panel right palm downward with same elbow angle and same arm location. Show entire torso and forearm and hand clearly, three-quarter view; elegant medical painting with restrained grey and warm natural skin tones. Precisely depict forearm rotation without elbow extension. No internal anatomy, no arrows, no text, numbers, icons, labels, no gym or weight. No extra fingers. The panels show an unloaded gentle motion, not strength exercise.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-9aec26ce-5735-42b9-b65c-ebf2fc602bb5.png"
+    },
+    {
+      "id": "torque",
+      "prompt": "Scientific educational illustration, premium contemporary medical textbook painting, white background, landscape 3:2. Single side view of a seated adult, cropped from shoulder to waist, elbow bent roughly 90 degrees and forearm horizontal holding a small dark dumbbell in a natural neutral grip. Forearm points right. Subtle cutaway on upper arm reveals red biceps fibers and intact elbow joint, realistic anatomical proportions, restrained red beige grey. Main visual subject is elbow and forearm with small dumbbell far from elbow, large readable shape, elegant negative space. Do NOT draw arrows, numbers, measurements, charts, formulas, text or labels; software supplies force geometry. No invented torque data. No glossy fitness ad, no pipe-like joints, no extra hands.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-5b12ff16-fa65-4fe3-912b-8436bc3bab6b.png"
+    },
+    {
+      "id": "sarcomere",
+      "prompt": "A scientifically informed premium medical textbook illustration, landscape 3:2 white background. A visual scale journey: a realistic red skeletal muscle bundle on left is gently opened to reveal parallel cylindrical muscle fibers, one fiber continues into a magnified cutaway at right containing many parallel myofibrils with regularly repeated sarcomere banding. Beautiful detailed muscle fibers and translucent membranes, red ochre and muted blue. Focus on nested organization muscle > fiber > myofibrils, no diagram purporting to measure contraction, no comparison of filament lengths, no arrows, no text or labels, no letters, no fake data. Clear large forms readable on a phone, clean composition without decorative molecule balls.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-5a951d70-ea46-4d91-acbf-8ba9b8c41516.png"
+    },
+    {
+      "id": "motor",
+      "prompt": "Premium educational neuroscience medical illustration on white, landscape 3:2. ONE large realistic alpha motor neuron cell body at upper left with branching dendrites, long single axon running diagonally right then splitting into THREE terminal branches. EACH branch ends at a distinct neuromuscular junction on one of THREE parallel red striated skeletal muscle fibers below/right. Exactly one neuron and three innervated fibers, no second neuron, no muscle-to-muscle connections, no bare wire entering nucleus. Axon ochre, muscle muted red, junction membranes realistically indicated. Large legible structure, fine natural shading, restrained medical textbook detail. No labels, text, arrows, numbers, glow, fake action potential graph or icons. Illustrates one motor unit, not recruitment thresholds.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-7832f077-2f63-493d-bf9f-76f832d19dc0.png"
+    },
+    {
+      "id": "energy",
+      "prompt": "One high quality medical textbook cutaway of a skeletal muscle cell for a personal physiology course, white background landscape 3:2. Foreground large red striated myofibrils inside translucent muscle cell membrane; along the fibers several mitochondria in orange/ochre, one mitochondrion opened prominently showing a DOUBLE membrane and folded inner cristae. Small glycogen granule clusters sit in cytoplasm. Clean readable magnified cellular anatomy in refined medical painting, red tan muted blue palette. Do not invent ATP measurements or energy pathway percentages, no pie chart, no serial switches, no labels, no text, no chemical letters, no glowing magic energy. Teach that muscle cells contain contractile structures and mitochondria; detailed pathways provided separately by software.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-4cb0074a-3fee-4938-8f88-ae3da5c0cf4f.png"
+    },
+    {
+      "id": "fuel",
+      "prompt": "Create an elegant contemporary physiology textbook plate, white background landscape 3:2, refined medical painting, two equal panels separated by whitespace. LEFT realistic human liver in warm red-brown with a small magnified inset of hepatocytes containing dark glycogen granules. RIGHT red skeletal muscle fiber bundle with a small magnified inset of a muscle cell containing dark glycogen granules. Match granule appearance in both insets; liver clearly recognizable and muscle has visible longitudinal fibers. Not a digestive chain, no arrows connecting liver and muscle, no rates or percentages, no labels, words, chemical letters or numbers. Large shapes readable on mobile, no decorative food icons. Illustrates two glycogen storage tissues, biochemical distinction explained in caption.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-4aef9a8d-c495-4984-a36d-a573c929f2c9.png",
+      "editPrompt": "Edit this educational medical illustration. Preserve the liver, all layout, muscle bundle and two inset circles, fine white background and original rendering quality. Correct one precise anatomical error ONLY: in the main transverse cut face of the skeletal muscle bundle at upper right, there are purple nucleus-like dots within the CENTER of several individual muscle fibers. Remove ALL central nucleus-like dark purple dots from that main cut face. If any muscle nuclei are shown, put them at the OUTERMOST EDGE of individual muscle fibers beneath their sarcolemma; healthy adult skeletal muscle nuclei are peripheral. Preserve realistic pale connective tissue septa and small capillaries BETWEEN fibers. The longitudinal muscle-cell inset at bottom right should also keep purple myonuclei at its fiber boundaries, never within the central cytoplasm. Do not change liver hepatocyte nuclei: their central nuclei are correct and must remain. No new text, labels, numbers, arrows or other changes."
+    },
+    {
+      "id": "adaptation",
+      "prompt": "A sophisticated medical textbook illustration of skeletal muscle protein remodeling, white background landscape 3:2. Dominant central cutaway of a red skeletal muscle fiber with organized parallel myofibrils, a large translucent nucleus at edge, and a magnified inset showing a ribosome on a strand of mRNA producing a folded polypeptide. Ribosome two subunits, emerging chain of amino acid beads, readable realistic medical science art with muted red teal ivory. No bodybuilder, no huge before/after muscle, no immediate growth arrows, no inflammation illustration, no fake effect size. No text, numbers, labels, charts, or chemical letter sequences. Caption will explain protein synthesis and limits; image depicts structures, not guarantee of hypertrophy.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-8dddc2ba-e71a-47ac-95ce-ccf790e22d03.png"
+    },
+    {
+      "id": "hpg",
+      "prompt": "Premium medical textbook plate of the organs involved in male reproductive endocrine regulation, white background landscape 3:2. Two separated large anatomical views: LEFT midsagittal human brain showing small hypothalamic region and anatomically located pituitary suspended below hypothalamus via stalk, calm grey brain with modest muted blue emphasis on these two structures. RIGHT cutaway of one human testis showing coiled seminiferous tubules and an enlarged inset of interstitial Leydig cells located BETWEEN tubules, golden brown distinct cells. Render precise recognizable organ anatomy, clean large shapes, restrained clinical palette. No arrows between organs, no positive/negative feedback claims baked into image, no labels, words, numbers, charts, sexualized framing or skin genitals. Software supplies the GnRH/LH/feedback model separately.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-96807984-7113-4468-b878-d80fb52052b6.png"
+    },
+    {
+      "id": "signals",
+      "prompt": "Premium scientific educational cell illustration, white background landscape 3:2. A close detailed cutaway through a cell plasma membrane, phospholipid bilayer clearly two leaflets with hydrophilic heads facing aqueous exterior and cytoplasm and hydrophobic tails inward. One membrane receptor protein spans membrane, extracellular hormone ligand docks into its extracellular pocket, intracellular domain visible. Inside cell a nucleus with envelope, a DIFFERENT small lipid-soluble ligand passes through bilayer and binds an intracellular receptor. Distinct muted amber and blue ligands, elegant medical painting readable at phone size. No arrows, labels, chemical letters, text, graphs, magic glow, no lock and key cartoon. This is a conceptual comparison of receptor location; no claim all hormones use membrane receptors.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-866f8d80-3960-4fc0-b5a7-1ab36ecd661b.png"
+    },
+    {
+      "id": "evidence",
+      "prompt": "Sophisticated editorial scientific illustration for a personal anatomy course, landscape 3:2 white background, refined realistic medical painting. Two balanced scenes: LEFT clinician in neutral scrubs uses an ultrasound probe on the relaxed upper arm of a seated participant, RIGHT researcher records observations in a plain notebook beside a small anatomical muscle model. Ultrasound monitor shows a generic grayscale tissue texture WITHOUT numerical results, plots, or readable text. Focus on measurement, care and observation, human anatomy proportionate and hands natural five fingers. Quiet grey muted blue red accents. No badges, icons, checkmarks, slogans, decorative graphs, before/after body changes, fake research findings or text. Readable clean composition.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-a3d4512a-af3e-45fe-8398-819b8d0f5415.png"
+    },
+    {
+      "id": "press",
+      "prompt": "Premium anatomy textbook illustration, white background landscape 3:2. A single adult male lying supine on a simple grey flat bench performing a barbell bench press, bar held above chest with both hands, elbows slightly bent, feet on floor. Three-quarter side view, correct limb proportions and normal hands. Anatomical cutaway shows red pectoralis major fan on chest and triceps on posterior upper arm, other tissue neutral grey, no exaggerated bodybuilding bulk. Refined medically informed painting with clear shoulder and elbow positions. No labels, arrows, text, numbers, charts, or fake activation percentages. A visual example of a multijoint pushing movement, not exercise prescription.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-14c28ddc-cc0d-4413-b3d0-0458d0add551.png"
+    },
+    {
+      "id": "sleep",
+      "prompt": "Premium editorial medical science illustration, white background landscape 3:2. A relaxed adult sleeping on their side under a simple light grey blanket with head supported by pillow, natural posture. At right separate small anatomical inset of a red skeletal muscle fiber with organized myofibrils, no magical connection between person and cell. Gentle sophisticated medical painting muted grey ivory blue and natural skin. No moon icon, no charts, percentages, glowing healing beams, before/after muscles, text or numbers. Illustrates sleep as context for recovery research without claiming guaranteed growth.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-0f0d8476-1882-47e4-a350-882836d16395.png"
+    },
+    {
+      "id": "glands",
+      "prompt": "Premium endocrinology textbook anatomical plate, white background landscape 3:2, three large realistic structures separated by white space: left human thyroid with two lobes and isthmus wrapped around front of short trachea segment; center human pancreas with lobulated texture; right cutaway adrenal gland seated on the superior pole of a kidney, adrenal cortex outer ochre rim and medulla darker central region, kidney reddish brown. Refined realistic medical illustration with restrained color, clear recognisable organs, large phone-readable forms. No arrows, labels, text, numbers, chemical symbols, whole-body montage or icons. These are separate anatomical structures, not relative size or one contiguous organ.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-c85d3f5c-af36-4f3c-88bc-3dab98a13839.png"
+    },
+    {
+      "id": "nutrition",
+      "prompt": "Premium scientific physiology illustration, white background landscape 3:2. Two distinct magnified cellular scenes separated by whitespace: LEFT a ribosome with two subunits on mRNA producing a nascent polypeptide made of amino acid beads; RIGHT one accurate cutaway mitochondrion with double membrane and folded inner cristae near red skeletal myofibrils. Natural muted teal ochre red medical textbook painting, large clear detailed forms. No arrows from protein to mitochondrion, no invented molecular formulas, text, labels, numbers, percentages or magic energy glow. Image compares synthesis structures and metabolic structures, distinction explained by software caption.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-bcf80aaa-1c3a-4b51-b211-2071db49d507.png"
+    },
+    {
+      "id": "learning",
+      "prompt": "A beautiful quiet editorial illustration for an adult science learning app, white background landscape 3:2, realistic refined medical textbook-adjacent painting. An adult woman sitting at a desk recalling information from memory and writing a short explanation in a plain notebook, a CLOSED blue anatomy textbook beside her and a small red muscle anatomical model on desk. Clear natural hands with five fingers, relaxed attentive expression, warm restrained grey blue ivory. No readable writing, no text labels, numbers, calendars, badges, checkmarks or abstract brain circuitry. Large clean forms readable on mobile, not a cartoon. Represents recalling without copying, not proof of knowledge.",
+      "path": "C:\\Users\\skibi\\.codex\\generated_images\\01a0f369-2314-7302-b240-742589a4c90c\\exec-4c04d922-ac42-4eb9-973a-cc76f3fe911f.png"
+    }
+  ]
+}

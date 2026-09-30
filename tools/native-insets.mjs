@@ -1,0 +1,28 @@
+import fs from 'node:fs/promises';
+import {execFileSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+const own=JSON.parse(await fs.readFile('qa/native/ownership.json','utf8'));
+assert.equal(own.serial,'emulator-5586');
+const adb='C:/Users/skibi/AppData/Local/Android/Sdk/platform-tools/adb.exe';
+const run=(...args)=>execFileSync(adb,['-s',own.serial,...args],{encoding:'utf8'}).trim();
+const targets=await (await fetch('http://127.0.0.1:9223/json')).json();const target=targets.find(t=>t.url==='file:///android_asset/index.html');const url=new URL(target.webSocketDebuggerUrl);url.host='127.0.0.1:9223';
+const ws=new WebSocket(url),pending=new Map();let id=0;
+ws.addEventListener('message',e=>{const m=JSON.parse(e.data);const p=pending.get(m.id);if(p){pending.delete(m.id);m.error?p.reject(Error(JSON.stringify(m.error))):p.resolve(m.result);}});
+await new Promise((resolve,reject)=>{ws.addEventListener('open',resolve);ws.addEventListener('error',reject);});
+const send=(method,params)=>new Promise((resolve,reject)=>{pending.set(++id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));});
+async function ev(expression){const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw Error(JSON.stringify(r.exceptionDetails));return r.result.value;}
+const click=a=>ev(`document.querySelector('[data-action="${a}"]').click()`);
+assert.equal(await ev('state.completed.includes("biceps")'),true);
+await ev('start("biceps","learn")');await click('next');await click('next');const correct=await ev('activeTask().q.correct');await ev(`document.querySelector('[data-action="select"][data-index="${correct}"]').click()`);await click('submit-check');await click('next');await click('observe');await click('next');
+run('shell','settings','put','secure','show_ime_with_hard_keyboard','1');
+const before=await ev('({height:innerHeight,dpr:devicePixelRatio})');
+const point=await ev(`(()=>{const t=document.querySelector('#recall-text');t.scrollIntoView({block:'center'});const r=t.getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+24};})()`);
+await send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point]});await send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+await new Promise(r=>setTimeout(r,1800));
+const after=await ev('({height:innerHeight,visualHeight:visualViewport.height,footerBottom:document.querySelector(".footer").getBoundingClientRect().bottom})');
+run('shell','screencap','-p','/sdcard/insets-final.png');run('pull','/sdcard/insets-final.png','qa/native/insets-final.png');run('shell','rm','/sdcard/insets-final.png');
+assert(after.height<before.height-100,'Software keyboard must shrink the actual WebView viewport');assert(after.footerBottom<=after.height+2,'Footer remains above the keyboard');
+run('shell','input','keyevent','4');await new Promise(r=>setTimeout(r,400));
+const restored=await ev('innerHeight');assert.equal(restored,before.height);
+await ev('appBack()');
+const report={tests:['App data survived reinstall with same signing key','Visible software keyboard resizes actual WebView','Footer stays within WebView above keyboard','Closing keyboard restores viewport'],before,after,restored};await fs.writeFile('qa/native/insets-report.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));ws.close();

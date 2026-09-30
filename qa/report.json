@@ -1,0 +1,64 @@
+{
+  "lessons": [
+    {
+      "id": "biceps",
+      "result": "completed",
+      "wrongAnswerRemediated": true
+    },
+    {
+      "id": "torque",
+      "result": "completed",
+      "wrongAnswerRemediated": true
+    },
+    {
+      "id": "sarcomere",
+      "result": "completed",
+      "wrongAnswerRemediated": true
+    },
+    {
+      "id": "motor",
+      "result": "completed",
+      "wrongAnswerRemediated": true
+    },
+    {
+      "id": "energy",
+      "result": "completed",
+      "wrongAnswerRemediated": true
+    },
+    {
+      "id": "fuel",
+      "result": "completed",
+      "wrongAnswerRemediated": true
+    },
+    {
+      "id": "adaptation",
+      "result": "completed",
+      "wrongAnswerRemediated": true
+    },
+    {
+      "id": "testosterone",
+      "result": "completed",
+      "wrongAnswerRemediated": true
+    },
+    {
+      "id": "signals",
+      "result": "completed",
+      "wrongAnswerRemediated": true
+    },
+    {
+      "id": "evidence",
+      "result": "completed",
+      "wrongAnswerRemediated": true
+    }
+  ],
+  "tests": [
+    "First lesson available, future lessons follow prerequisite path",
+    "Interrupted lesson resumes exact step and text after reload",
+    "All ten lessons completed through UI, without counting immediate responses as delayed mastery",
+    "Early rehearsal does not count as delayed success or shift due date",
+    "Delayed independent success schedules 3 days",
+    "Wrong first answer plus assistance schedules one day and is not counted as independent success",
+    "360px phone, S24 Ultra sized viewport, landscape and desktop: no horizontal overflow",
+    "No JavaScript errors or failed asset requests"
+  ]
+}

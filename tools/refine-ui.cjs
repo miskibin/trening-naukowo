@@ -1,0 +1,12 @@
+const fs=require('node:fs');
+const p='android/app/src/main/assets/diagrams.js';
+let d=fs.readFileSync(p,'utf8');
+d=d.replace('<path d="M91 50Q124 65 106 103" fill="none" stroke="#ac6e55" stroke-width="13"/>','<path d="M91 50Q124 65 106 103M283 50Q316 65 298 103" fill="none" stroke="#ac6e55" stroke-width="13"/>');
+d=d.replace('<path d="M108 102L104 120" fill="none" stroke="#ac6e55" stroke-width="4"/>','<path d="M108 102L104 120M298 102L290 120" fill="none" stroke="#ac6e55" stroke-width="4"/><circle cx="290" cy="120" r="5" fill="#ac6e55"/>');
+d=d.replace('<g stroke="#3879a7" stroke-width="9">','<g stroke="${unlabelled?\'#b8c6d2\':\'#3879a7\'}" stroke-width="9">');
+fs.writeFileSync(p,d);
+const ap='android/app/src/main/assets/app.js';
+let a=fs.readFileSync(ap,'utf8');
+a=a.replace('${!resumable&&display.id===\'biceps\'?`<div class="home-diagram">${forearmDiagram()}</div>`:\'\'}','');
+a=a.replace('krok ${Math.min(s.step+1,6)}/6','krok ${s.step+1}/${saved.mode===\'review\'?3:6}');
+fs.writeFileSync(ap,a);

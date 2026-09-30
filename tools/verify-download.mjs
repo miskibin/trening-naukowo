@@ -1,0 +1,15 @@
+import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+const log=await fs.readFile('qa/download/tunnel.err.log','utf8');
+const base=log.match(/https:\/\/[a-z0-9-]+\.trycloudflare\.com/)?.[0];
+if(!base)throw Error('Tunnel hostname not ready');
+const url=base+'/TreningNaukowo-v1.1.apk';
+const response=await fetch(url,{signal:AbortSignal.timeout(45000)});
+if(response.status!==200)throw Error('Download HTTP '+response.status);
+const bytes=Buffer.from(await response.arrayBuffer());const sha256=createHash('sha256').update(bytes).digest('hex');
+if(bytes.length!==35641768||sha256!=='873b5a26d21f79a2615770e3047bf6fe58ffbbf4b48e84ed8b93b8d1311aea15')throw Error('Downloaded APK mismatch');
+const range=await fetch(url,{headers:{Range:'bytes=0-1023'},signal:AbortSignal.timeout(15000)});
+const chunk=Buffer.from(await range.arrayBuffer());if(range.status!==206||!chunk.equals(bytes.subarray(0,1024)))throw Error('Resumed download check failed');
+const forbidden=await fetch(base+'/.git/config',{signal:AbortSignal.timeout(15000)});if(forbidden.status!==404)throw Error('Unexpected file exposure');
+const report={url,bytes:bytes.length,sha256,contentType:response.headers.get('content-type'),disposition:response.headers.get('content-disposition'),download:200,range:206,otherFiles:404,verifiedUtc:new Date().toISOString()};
+await fs.writeFile('qa/download/verified.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));

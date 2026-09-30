@@ -1,0 +1,147 @@
+{
+  "offline": true,
+  "title": "Trening Naukowo",
+  "imageDecode": {
+    "count": 20,
+    "failures": [],
+    "images": [
+      {
+        "src": "images/art/adaptation.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/biceps.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/energy.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/evidence.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/fuel.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/glands.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/hpg.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/learning.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/motor.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/movement.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/nutrition.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/press.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/sarcomere.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/signals.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/sleep.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/torque.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/biceps-radial-tuberosity-cureus.png",
+        "decoded": true,
+        "width": 986,
+        "height": 1338
+      },
+      {
+        "src": "images/motor-units.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 442
+      },
+      {
+        "src": "images/pronation-supination-openstax.webp",
+        "decoded": true,
+        "width": 291,
+        "height": 453
+      },
+      {
+        "src": "images/sliding-filaments.webp",
+        "decoded": true,
+        "width": 1650,
+        "height": 1510
+      }
+    ]
+  },
+  "zoom": {
+    "open": true,
+    "zoomed": true,
+    "pressed": "true"
+  },
+  "nativeBackClosedZoom": true,
+  "savedProgress": {
+    "key": "trening-naukowo-v1",
+    "active": {
+      "id": "biceps",
+      "mode": "learn"
+    },
+    "step": 1,
+    "completed": [],
+    "homeShowsResume": true
+  },
+  "savedAtUtc": "2026-09-30T19:59:28.659Z"
+}

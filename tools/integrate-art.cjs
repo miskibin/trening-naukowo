@@ -1,0 +1,26 @@
+const fs=require('node:fs');
+const path='android/app/src/main/assets/app.js';
+let s=fs.readFileSync(path,'utf8');
+function replace(a,b){if(!s.includes(a))throw Error('Missing integration anchor: '+a.slice(0,100));s=s.replace(a,b);}
+replace("${t.diagram?diagram(t.diagram,t.diagram==='energy'?'Schemat współdziałania dróg odtwarzania ATP':'Schemat dydaktyczny · bez skali'):''}","${artFigure(l,'theory',s.step)}${t.diagram&&t.diagram!=='forearm'?diagram(t.diagram,t.diagram==='energy'?'Schemat współdziałania dróg odtwarzania ATP':'Model zależności · uproszczony, bez skali'):''}");
+replace("<h1>${l.title}</h1><p>${l.conclusion}</p>","<h1>${l.title}</h1>${artFigure(l,'summary')}<p>${l.conclusion}</p>");
+replace("function renderTask(q,a,heading='h1')","function renderTask(q,a,heading='h1',withArt=true)");
+replace("let content=`<${heading}>${q.q}</${heading}>`;if(q.type==='identify')content+=`<figure class=\"diagram\">${forearmDiagram(true)}<figcaption>Układ kości w dwóch ustawieniach · bez podpisów</figcaption></figure>`;", "let content=`<${heading}>${q.q}</${heading}>${withArt?artFigure(currentLesson()):''}`;");
+replace("<h1>${task.title}</h1><ol class=\"steps\">","<h1>${task.title}</h1>${artFigure(l,'practice')}<ol class=\"steps\">");
+replace("${p.observe?diagram('forearm','Obserwacja zastępuje ruch; nie wpływa na ukończenie lekcji.'):''}","${p.observe?'<p class=\"small\">Porównaj oba ustawienia na ilustracji powyżej. Obserwacja zastępuje ruch.</p>':''}");
+replace("<h1>${task.title}</h1><div class=\"feedback", "<h1>${task.title}</h1>${artFigure(l,'practice')}<div class=\"feedback");
+replace("renderTask(interpretation,p.interpret,'h2')","renderTask(interpretation,p.interpret,'h2',false)");
+replace("let s=`<h1>${l.recall}</h1><p class=\"small\">", "let s=`<h1>${l.recall}</h1>${artFigure(l)}<p class=\"small\">");
+replace("<p>${l.conclusion}</p><div class=\"completion\"><p>${result.delayed", "${artFigure(l,'summary')}<p>${l.conclusion}</p><div class=\"completion\"><p>${result.delayed");
+replace("function action(name,el){if(name==='home')", "function action(name,el){if(name==='art-open'){openArt(el);return;}if(name==='home')");
+replace("window.appBack=()=>{if(route!=='home')", "window.appBack=()=>{const art=document.querySelector('.art-dialog[open]');if(art){art.close();return true;}if(route!=='home')");
+replace("Dziesięć lekcji, zadania i schematy", "Dziesięć lekcji, zadania i ilustracje");
+replace("Bibliografia i ograniczenia są dostępne po rozwinięciu przy każdej lekcji. Schematy autorskie pokazują zależności; wykresy modelowe są podpisane. Nie przedstawiają Twoich pomiarów.","Bibliografia i ograniczenia są dostępne po rozwinięciu przy każdej lekcji. Ilustracje wygenerowane służą jako uproszczony kontekst anatomiczny. Podpisy objaśniają ich zakres; dokładne zależności pokazują osobne modele. Wykresy modelowe nie przedstawiają Twoich pomiarów.");
+replace("Wersja 1.0 ·", "Wersja 1.1 ·");
+replace("<h1>${display.title}</h1><p class=\"small\">", "<h1>${display.title}</h1>${artFigure(display,'theory',0)}<p class=\"small\">");
+replace("<h1>Przypomnij bez podglądania</h1>","<h1>Przypomnij bez podglądania</h1>${artFigure(LESSONS.find(l=>l.id==='evidence'))}");
+replace("<h1>Twój kurs, na tym telefonie</h1>","<h1>Twój kurs, na tym telefonie</h1>${artFigure(LESSONS.find(l=>l.id==='evidence'))}");
+fs.writeFileSync(path,s);
+const css='android/app/src/main/assets/styles.css';
+fs.appendFileSync(css,`\n.lesson-art{margin:22px 0 28px;background:#fff;border:1px solid #e1e7eb;border-radius:10px;overflow:hidden}.art-button{display:block;width:100%;border:0;background:#fff;padding:0;line-height:0;touch-action:manipulation}.art-button img{display:block;width:100%;height:auto;max-height:440px;object-fit:contain}.lesson-art figcaption{padding:13px 15px;font-size:.79rem;line-height:1.55;color:var(--ink);border-top:1px solid #edf0f3}.art-credit{display:block;font-size:.67rem;color:var(--muted);margin-top:6px;line-height:1.4}.art-dialog{width:min(98vw,1050px);max-height:95dvh;padding:0;background:#fff;border:1px solid var(--line);border-radius:10px;color:var(--ink)}.art-dialog::backdrop{background:rgba(18,34,46,.78)}.art-dialog-bar{display:flex;justify-content:space-between;gap:10px;padding:4px 15px;border-bottom:1px solid var(--line)}.art-dialog-bar button{font-size:.86rem}.art-scroll{overflow:auto;max-height:65dvh;background:#fff}.art-scroll img{display:block;width:100%;height:auto;max-width:none}.art-dialog.zoomed .art-scroll img{width:220%}.art-dialog-caption{padding:14px 16px;margin:0}.continue .lesson-art{margin:18px 0}.continue .art-button img{max-height:280px}@media(max-width:370px){.lesson-art figcaption{padding:11px 12px}.art-dialog-bar{padding-inline:10px}}\n`);
+console.log('Illustrations integrated in all learning and review steps; zoom dialog and native Back support added.');
