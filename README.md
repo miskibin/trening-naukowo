@@ -4,7 +4,7 @@ Osobista aplikacja Android po polsku: dziesięć lekcji anatomii funkcjonalnej, 
 
 ## Instalacja
 
-Gotowy pakiet: [pobierz APK z GitHub Releases](https://github.com/miskibin/trening-naukowo/releases/latest/download/TreningNaukowo-v1.2.apk). Strona wydania: [Releases](https://github.com/miskibin/trening-naukowo/releases).
+Gotowy pakiet: [pobierz APK z GitHub Releases](https://github.com/miskibin/trening-naukowo/releases/latest/download/TreningNaukowo-v1.3.apk). Strona wydania: [Releases](https://github.com/miskibin/trening-naukowo/releases).
 
 1. Przenieś plik APK na telefon, np. przewodem USB.
 2. Otwórz APK na telefonie i pozwól wybranej aplikacji na instalowanie z tego źródła, jeśli Android o to poprosi.
@@ -25,7 +25,8 @@ Kod i dokumentacja są w repozytorium; pliki APK i ich sumy SHA-256 są załącz
 - Każdy krok i wpisany tekst zapisują się lokalnie. Przerwaną lekcję można kontynuować.
 - Ukończenie lekcji i powodzenie powtórki po czasie to odrębne dane. Wcześniejsza próba nie przesuwa terminu. Błąd w pierwszej odpowiedzi albo niepełne wyjaśnienie daje powrót następnego dnia.
 - Pierwsza powtórka po 24 godzinach; kolejne po udanych próbach: 3, 7, 14 i 30 dni. To jawna reguła dydaktyczna, nie dowód indywidualnej optymalizacji.
-- Każda część lekcji i powtórki ma ilustrację; dotknięcie otwiera powiększenie. Cały kurs, 28 wygenerowanych ilustracji i 8 ilustracji źródłowych znajdują się w APK. Linki do publikacji otwierają przeglądarkę i wymagają internetu.
+- Każda część lekcji i powtórki ma ilustrację; dotknięcie otwiera pełny ekran z dopasowaniem całego obrazu, zoomem i przesuwaniem. Android chowa paski systemowe.
+- Wszystkie 20 części teorii zawierają autorskie skojarzenia ułatwiające zapamiętanie nazw i mechanizmów. Podpowiedzi nie pojawiają się w niezależnym teście powtórkowym. Cały kurs, 28 wygenerowanych ilustracji i 8 ilustracji źródłowych znajdują się w APK. Linki do publikacji otwierają przeglądarkę i wymagają internetu.
 
 ## Źródła i ilustracje
 
@@ -38,6 +39,8 @@ Prompty i zakres: `ARTWORK.md`, `tools/art-manifest-v1.2.json`; specyfikacja wsz
 Zewnętrzne ilustracje: OpenStax oraz Casey Henley (Michigan State University), CC BY-NC-SA 4.0; dodatkowa rycina przyczepu bicepsa: Elgendy i wsp., Cureus (2025), CC BY 4.0. Dodatkowo DrJanaOfficial, CC BY-SA 4.0 (bliższa kość promieniowa) i Gray (1918), domena publiczna. Szczegółowe przypisania i licencje: `android/app/src/main/assets/images/reference/GRAPHICS.md` oraz `android/app/src/main/assets/images/GRAPHICS.md`, również przy ilustracjach w aplikacji. Ryciny zachowano bez zmian. Ilustracje nie zastępują pełnego atlasu anatomicznego.
 
 ## Weryfikacja
+
+Wersja 1.3: `APP_REVIEW_V1.3.md` opisuje znalezione problemy i poprawki. `qa/review-v1.3.json` obejmuje pełny ekran, fit/zoom/pan, zmianę orientacji, fokus, dodatkowe ryciny źródłowe, 20 części skojarzeń oraz zamknięcie zakończonej powtórki. `qa/native/review-v1.3.json` potwierdza na Androidzie 15 offline aktualizację prawdziwego APK 1.2 z zachowaniem kroku, ukrycie pasków systemowych, rzeczywisty gest dwóch palców, zamknięcie obrazu przez Wstecz i zapis notatki po restarcie. Test zapisu czekał 6 sekund przed wymuszonym zamknięciem procesu; nie dowodzi odporności na natychmiastowe zabicie procesu w trakcie zapisu.
 
 `qa/report.json` zapisuje wynik przejścia wszystkich dziesięciu lekcji w przeglądarce. Test objął błędne odpowiedzi, dodatkowy przykład, pominięcie ruchu, odtworzenie zapisanego kroku i tekstu po reloadzie, powtórkę przed terminem i po terminie oraz różne szerokości ekranu. Zrzuty są w `qa/`.
 

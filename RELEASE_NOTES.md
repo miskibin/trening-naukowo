@@ -1,24 +1,19 @@
-# Trening Naukowo 1.2.0
+# Trening Naukowo 1.3.0
 
-Strzałka w lekcji i systemowe Wstecz cofają teraz o jeden krok, zachowując odpowiedzi, obserwacje i notatki. Osobny przycisk „Wyjdź” zapisuje miejsce. Zapisanej powtórki nie można zaliczyć ponownie przez cofanie.
+Ilustracje otwierają się na pełnym ekranie z ukrytymi paskami Androida. Cały obraz mieści się w widoku; możesz powiększać go dwoma palcami lub przyciskami i przesuwać jednym palcem. Opis i źródło są rozwijane. Wstecz zamyka najpierw obraz, zachowując miejsce w lekcji.
 
-Każda z 20 części teorii ma widoczne plansze uczące struktur i polskie objaśnienia podpisów. Dodano 12 podpisanych ilustracji, m.in.:
+Wszystkie 20 części teorii zawierają skojarzenia ułatwiające zapamiętanie nazw i mechanizmów: łokciowa i czubek łokcia, promieniowa po stronie kciuka, supinacja z miską zupy, chropowaty zaczep guzowatości, filamenty, ATP, hormony i rozumienie badań. Są to autorskie wskazówki oparte na definicjach i bibliografii; nie przypisano im osobno potwierdzonej skuteczności naukowej.
 
-- dwa początki bicepsa na łopatce, brzusiec, ścięgno i zakończenie na guzowatości promieniowej;
-- zbliżenie głowy, szyjki i guzowatości kości promieniowej oraz porównanie przyczepów trzech zginaczy łokcia;
-- piersiowy i triceps, wapń–ATP, jednostki motoryczne, drogi odtwarzania ATP;
-- składniki pokarmowe, przebudowa białek, oś HPG, gruczoły i zakres wniosków z badań.
+Przegląd poprawił także dodatkowe ryciny w bibliografii, fokus klawiatury, przewijanie i powrót z podglądu oraz wyjście z zakończonej powtórki. Szczegóły i ograniczenia: `APP_REVIEW_V1.3.md` w repozytorium.
 
-Obrazy można powiększać. Cały kurs i materiały graficzne działają offline. Bibliografia, ograniczenia i atrybucja są dołączone.
+**Instalacja:** pobierz `TreningNaukowo-v1.3.apk` i zainstaluj nad poprzednią wersją, bez jej odinstalowywania. Ten sam podpis i klucz danych zachowują postęp. Cały kurs i ilustracje działają offline.
 
-**Instalacja:** pobierz `TreningNaukowo-v1.2.apk` i otwórz na Androidzie. Zainstaluj nad poprzednią wersją bez odinstalowywania, aby zachować postęp. Pakiet ma ten sam podpis co 1.0 i 1.1.
+**Sprawdzone:** wszystkie 10 lekcji, błędy i ponowne przykłady, powtórki i nawigacja; 92 widoki ilustracji oraz 20 zestawów skojarzeń; pełny ekran, zoom/pan, orientacja, klawiatura i dodatkowe źródłowe ryciny. Android 15 offline: rzeczywista aktualizacja 1.2 → 1.3 zachowała krok, paski systemowe chowają się i wracają, gest dwóch palców oraz systemowe Wstecz działają, polska notatka przetrwała restart (test odczekał 6 sekund na zapis przed force-stop). Nie testowano na fizycznym S24 Ultra. Końcowe APK zainstalowano; debugowanie WebView jest wyłączone; wszystkie 46 zasobów odpowiadają plikom źródłowym, podpis v2/v3 sprawdzony.
 
-**Weryfikacja:** pełne przejście 10 lekcji, korekta błędów, zapis tekstu, terminy powtórek; 92 widoki z ilustracjami, 31 obrazów głównych widoków; cofanie i zachowanie danych, brak podwójnego zaliczenia powtórki. Wszystkie 45 zasobów APK odpowiadają bieżącym plikom. Podpis v2/v3 sprawdzony; debugowanie wyłączone. Android 15 offline: wszystkie 36 obrazów zdekodowano pojedynczo, aktualizacja 1.1 → 1.2 zachowała krok, systemowe Wstecz cofa kroki i zamyka powiększenie, notatka przetrwała wymuszone zamknięcie po zapisie. Końcowy pakiet zainstalowano i obejrzano. Raporty są w repozytorium.
+Android 8+, min SDK 26, target SDK 35, versionCode 4. Przy pierwszym pełnym ekranie Android może wyświetlić własną instrukcję trybu immersyjnego.
 
-Android 8+ (min SDK 26), target SDK 35. Fizycznego Samsung Galaxy S24 Ultra nie testowano.
-
-Rozmiar: **60 452 806 bajtów**. SHA-256:
+Rozmiar: **60461063 bajtów**. SHA-256:
 
 ```
-0006f40ae6f7acbdd829372cdd866a750197a64cc31b3fe0b2c2d9de4005b23c
+9e898416ece1e691e3851311993d50352517d21e381cb13a3a33b9d9b3cd2b9e
 ```

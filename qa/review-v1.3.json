@@ -1,0 +1,175 @@
+{
+  "tests": [
+    "All 20 theory sections have at least two visible, qualified memory cues",
+    "Landscape image fits full viewport; buttons zoom, mouse pans, orientation refits, Escape restores image-button focus",
+    "Tall labelled plate fits at 360px; keyboard zoom/fit; Back closes image before lesson and retains page position",
+    "Both additional bibliography figures open in the same viewer",
+    "Keyboard answer selection keeps focus on the selected answer",
+    "Exit clears a completed review session; next review starts afresh without memory cues revealing answers"
+  ],
+  "coverage": [
+    {
+      "id": "biceps",
+      "index": 0,
+      "cues": [
+        "Ł jak łokieć",
+        "Kciuk wskazuje promieniową",
+        "Supinacja: nieś zupę"
+      ]
+    },
+    {
+      "id": "biceps",
+      "index": 1,
+      "cues": [
+        "Dwugłowy: dwa początki, wspólny koniec",
+        "Guzowatość: chropowaty zaczep",
+        "Nazwy podpowiadają drogę"
+      ]
+    },
+    {
+      "id": "torque",
+      "index": 0,
+      "cues": [
+        "Drzwi otwierasz przy klamce",
+        "Moment: siła razy ramię"
+      ]
+    },
+    {
+      "id": "torque",
+      "index": 1,
+      "cues": [
+        "Piersiowy przyciąga ramię ku klatce",
+        "Triceps prostuje łokieć"
+      ]
+    },
+    {
+      "id": "sarcomere",
+      "index": 0,
+      "cues": [
+        "Z jak granice odcinka",
+        "Dwa wsuwane grzebienie"
+      ]
+    },
+    {
+      "id": "sarcomere",
+      "index": 1,
+      "cues": [
+        "Wapń odsłania, ATP odłącza",
+        "Pompa też płaci ATP"
+      ]
+    },
+    {
+      "id": "motor",
+      "index": 0,
+      "cues": [
+        "Jeden neuron, cała jego drużyna",
+        "Mały próg, wcześniej do gry"
+      ]
+    },
+    {
+      "id": "motor",
+      "index": 1,
+      "cues": [
+        "Więcej drużyn ≠ szybsze sygnały",
+        "Kolejny sygnał przed odpoczynkiem"
+      ]
+    },
+    {
+      "id": "energy",
+      "index": 0,
+      "cues": [
+        "ATP to wspólna waluta",
+        "PCr: fosforan pod ręką"
+      ]
+    },
+    {
+      "id": "energy",
+      "index": 1,
+      "cues": [
+        "Wolniejszy ruch to objaw, nie diagnoza",
+        "Mleczan może jechać dalej"
+      ]
+    },
+    {
+      "id": "fuel",
+      "index": 0,
+      "cues": [
+        "Glukoza: jednostka; glikogen: zapas",
+        "Wątroba pomaga wszystkim, mięsień sobie"
+      ]
+    },
+    {
+      "id": "fuel",
+      "index": 1,
+      "cues": [
+        "Cegły i paliwo mają różne zadania",
+        "Kreatyna nie jest cegłą mięśnia"
+      ]
+    },
+    {
+      "id": "adaptation",
+      "index": 0,
+      "cues": [
+        "Remont ma budowanie i rozbiórkę",
+        "Hipertrofia: większy przekrój"
+      ]
+    },
+    {
+      "id": "adaptation",
+      "index": 1,
+      "cues": [
+        "Pompa to zdjęcie chwili",
+        "Jedna noc to krótki eksperyment"
+      ]
+    },
+    {
+      "id": "testosterone",
+      "index": 0,
+      "cues": [
+        "Trzy piętra, trzy nazwy",
+        "Leydiga: między kanalikami"
+      ]
+    },
+    {
+      "id": "testosterone",
+      "index": 1,
+      "cues": [
+        "Termostat hamuje dalszą produkcję",
+        "Skok po sesji ≠ wzrost po tygodniach"
+      ]
+    },
+    {
+      "id": "signals",
+      "index": 0,
+      "cues": [
+        "Sygnał musi mieć odbiorcę",
+        "Insulina magazynuje, glukagon uruchamia wątrobę"
+      ]
+    },
+    {
+      "id": "signals",
+      "index": 1,
+      "cues": [
+        "Kora — kortyzol: wspólne K",
+        "TSH wysyła polecenie, T3/T4 są produktem"
+      ]
+    },
+    {
+      "id": "evidence",
+      "index": 0,
+      "cues": [
+        "Razem nie znaczy: jedno powoduje drugie",
+        "Trzy pytania do badania"
+      ]
+    },
+    {
+      "id": "evidence",
+      "index": 1,
+      "cues": [
+        "Zdjęcie sesji, film adaptacji",
+        "Zamknij — powiedz — sprawdź"
+      ]
+    }
+  ],
+  "errors": []
+}

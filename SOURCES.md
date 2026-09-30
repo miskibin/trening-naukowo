@@ -1,4 +1,4 @@
-# Źródła naukowe do 8 lekcji anatomii funkcjonalnej
+# Źródła naukowe do 10 lekcji anatomii funkcjonalnej
 
 Notatka redakcyjna dla treści aplikacji. Twierdzenia są celowo węższe niż popularne uproszczenia o „izolowaniu” mięśni, sztywnych strefach energetycznych i hormonach anabolicznych. Źródła obejmują podręczniki akademickie, przeglądy i badania u ludzi. W aplikacji warto pokazywać źródło przy konkretnej lekcji oraz odróżniać ustalone mechanizmy od ograniczeń badań.
 
@@ -139,3 +139,10 @@ Notatka redakcyjna dla treści aplikacji. Twierdzenia są celowo węższe niż p
 - W metaanalizie Cepedy i współautorów optymalny odstęp zależał od tego, jak długo później miała nastąpić próba pamięciowa; nie ma jednego najlepszego odstępu dla wszystkich celów.
 
 **Zastrzeżenia**: te badania nie wyznaczają idealnego harmonogramu dla konkretnej aplikacji anatomii. Quiz powinien dawać wyjaśnienie po odpowiedzi i wracać do pojęć po odstępie; nie obiecuj, że pojedynczy quiz gwarantuje trwałą naukę ani nie narzucaj „magicznego” schematu powtórek bez danych o użytkowniku.
+
+
+## Skojarzenia pamięciowe w wersji 1.3
+
+Skojarzenia są autorskimi wskazówkami, opartymi na definicjach z bibliografii lekcji. Nie stanowią osobno przetestowanej interwencji dydaktycznej i nie zastępują odtwarzania z pamięci. Nie przypisano nazwom wymyślonej etymologii. Położenie kości po stronie kciuka oraz kostny czubek łokcia i guzowatość promieniowej sprawdzono w [OpenStax, Anatomy and Physiology 2e, 8.2](https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb). Promieniowa również uczestniczy w stawie łokciowym: skojarzenie „Ł jak łokieć” odnosi się do wyrostka łokciowego, nie wyłączności udziału w stawie.
+
+Podstawa odtwarzania z pamięci pozostaje badaniem Roedigera i Karpicke (2006), DOI [10.1111/j.1467-9280.2006.01693.x](https://doi.org/10.1111/j.1467-9280.2006.01693.x). Wynik tego badania nie jest dowodem skuteczności konkretnych autorskich skojarzeń aplikacji. Analogiczne przykłady mają wyraźne granice: filamenty nie skracają się jak „zęby grzebieni”; trzy drogi odtwarzania ATP współdziałają; insulina nie ma tylko jednego działania; termostat nie oznacza stałego stężenia hormonu.

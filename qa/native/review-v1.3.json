@@ -1,0 +1,31 @@
+{
+  "tests": [
+    "Real release v1.2 UI progress at step 2 retained by install -r v1.3",
+    "Native immersive bars hidden, full viewport fit, real pinch zoom; Android Back closes viewer and restores system bars without changing step",
+    "Polish note and step retained after force-stop (6-second storage commit window); system Back still moves one step"
+  ],
+  "offline": true,
+  "updatedState": {
+    "active": {
+      "id": "biceps",
+      "mode": "learn"
+    },
+    "step": 1,
+    "count": "2/6"
+  },
+  "viewer": {
+    "height": 915,
+    "dialog": {
+      "x": 0,
+      "y": 0,
+      "w": 412.19049072265625,
+      "h": 915.047607421875
+    },
+    "fit": true,
+    "descriptionOpen": false
+  },
+  "restart": {
+    "step": 4,
+    "text": "Promieniowa jest po stronie kciuka, a czubek łokcia należy do łokciowej."
+  }
+}

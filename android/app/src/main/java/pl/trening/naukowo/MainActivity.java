@@ -15,6 +15,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.webkit.JavascriptInterface;
 import android.widget.Toast;
 import android.widget.FrameLayout;
 
@@ -26,6 +27,7 @@ public final class MainActivity extends Activity {
     private FrameLayout contentContainer;
     private Object backCallback;
     private boolean checkingBack;
+    private boolean viewerFullscreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,7 @@ public final class MainActivity extends Activity {
         settings.setAllowUniversalAccessFromFileURLs(false);
         settings.setAllowContentAccess(false);
         settings.setSupportMultipleWindows(false);
+        webView.addJavascriptInterface(new ViewerBridge(), "NativeViewer");
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -74,7 +77,7 @@ public final class MainActivity extends Activity {
         ));
         contentContainer.setOnApplyWindowInsetsListener((view, insets) -> {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-                Api30.applySafeAndImeInsets(view, insets);
+                Api30.applySafeAndImeInsets(view, insets, viewerFullscreen);
             } else {
                 view.setPadding(
                     insets.getSystemWindowInsetLeft(),
@@ -105,6 +108,36 @@ public final class MainActivity extends Activity {
         if (Build.VERSION.SDK_INT >= 29) {
             Api29.disableBarContrastEnforcement(window);
         }
+    }
+
+    // The bridge exposes only immersive display, never navigation or device data.
+    private final class ViewerBridge {
+        @JavascriptInterface
+        public void setFullscreen(boolean enabled) {
+            runOnUiThread(() -> setViewerFullscreen(enabled));
+        }
+    }
+
+    @SuppressWarnings("deprecation")
+    private void setViewerFullscreen(boolean enabled) {
+        if (isFinishing() || isDestroyed()) return;
+        viewerFullscreen = enabled;
+        if (Build.VERSION.SDK_INT >= 30) {
+            Api30.setFullscreen(getWindow(), enabled);
+        } else {
+            getWindow().getDecorView().setSystemUiVisibility(enabled
+                ? View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                : View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR | View.SYSTEM_UI_FLAG_LIGHT_NAVIGATION_BAR);
+        }
+        contentContainer.requestApplyInsets();
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus && viewerFullscreen) setViewerFullscreen(true);
     }
 
     private boolean handleNavigation(Uri uri) {
@@ -181,9 +214,18 @@ public final class MainActivity extends Activity {
     private static final class Api30 {
         private Api30() { }
 
-        static void applySafeAndImeInsets(View view, WindowInsets insets) {
+        static void setFullscreen(Window window, boolean enabled) {
+            android.view.WindowInsetsController controller = window.getInsetsController();
+            if (controller == null) return;
+            controller.setSystemBarsBehavior(android.view.WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
+            if (enabled) controller.hide(WindowInsets.Type.systemBars());
+            else controller.show(WindowInsets.Type.systemBars());
+        }
+
+        static void applySafeAndImeInsets(View view, WindowInsets insets, boolean fullscreen) {
             android.graphics.Insets safeInsets = insets.getInsets(
-                WindowInsets.Type.systemBars() | WindowInsets.Type.displayCutout()
+                fullscreen ? WindowInsets.Type.displayCutout()
+                    : WindowInsets.Type.systemBars() | WindowInsets.Type.displayCutout()
             );
             android.graphics.Insets imeInsets = insets.getInsets(WindowInsets.Type.ime());
             view.setPadding(

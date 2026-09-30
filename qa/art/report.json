@@ -120,19 +120,22 @@
       "label": "sarcomere:learn:0",
       "srcs": [
         "images/art/sarcomere.png",
+        "images/sliding-filaments.webp",
         "images/sliding-filaments.webp"
       ]
     },
     {
       "label": "sarcomere:learn:1",
       "srcs": [
-        "images/art/calcium-atp.png"
+        "images/art/calcium-atp.png",
+        "images/sliding-filaments.webp"
       ]
     },
     {
       "label": "sarcomere:learn:2",
       "srcs": [
-        "images/art/sarcomere.png"
+        "images/art/sarcomere.png",
+        "images/sliding-filaments.webp"
       ]
     },
     {
@@ -144,12 +147,14 @@
     {
       "label": "sarcomere:learn:4",
       "srcs": [
-        "images/art/sarcomere.png"
+        "images/art/sarcomere.png",
+        "images/sliding-filaments.webp"
       ]
     },
     {
       "label": "sarcomere:learn:5",
       "srcs": [
+        "images/sliding-filaments.webp",
         "images/sliding-filaments.webp"
       ]
     },
@@ -168,26 +173,30 @@
     {
       "label": "sarcomere:review:2",
       "srcs": [
+        "images/sliding-filaments.webp",
         "images/sliding-filaments.webp"
       ]
     },
     {
       "label": "motor:learn:0",
       "srcs": [
-        "images/art/motor-labelled.png"
+        "images/art/motor-labelled.png",
+        "images/motor-units.png"
       ]
     },
     {
       "label": "motor:learn:1",
       "srcs": [
         "images/art/motor-labelled.png",
+        "images/motor-units.png",
         "images/motor-units.png"
       ]
     },
     {
       "label": "motor:learn:2",
       "srcs": [
-        "images/art/sarcomere.png"
+        "images/art/sarcomere.png",
+        "images/motor-units.png"
       ]
     },
     {
@@ -199,12 +208,14 @@
     {
       "label": "motor:learn:4",
       "srcs": [
-        "images/art/sarcomere.png"
+        "images/art/sarcomere.png",
+        "images/motor-units.png"
       ]
     },
     {
       "label": "motor:learn:5",
       "srcs": [
+        "images/motor-units.png",
         "images/motor-units.png"
       ]
     },
@@ -223,6 +234,7 @@
     {
       "label": "motor:review:2",
       "srcs": [
+        "images/motor-units.png",
         "images/motor-units.png"
       ]
     },

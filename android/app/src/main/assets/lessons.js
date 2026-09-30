@@ -1,6 +1,7 @@
 /* Autorskie objaśnienia; bibliografia przy każdej lekcji. */
 const OS='https://openstax.org/books/anatomy-and-physiology-2e/pages/';
 const SOURCE={
+ forearmBones:{title:'Betts i wsp. · Anatomy and Physiology 2e, 8.2',url:OS+'8-2-bones-of-the-upper-limb',kind:'Podręcznik · promieniowa, łokciowa, wyrostek łokciowy i guzowatość'},
  bicepsAnatomy:{title:'Tiwana, Charlick, Varacallo · StatPearls (2024)',url:'https://www.ncbi.nlm.nih.gov/books/NBK519538/',kind:'Podręcznik · Anatomia mięśnia dwugłowego ramienia'},
  brachialis:{title:'Plantz, Bordoni · StatPearls (2023)',url:'https://www.ncbi.nlm.nih.gov/books/NBK551630/',kind:'Podręcznik · Anatomia mięśnia ramiennego'},
  brachioradialis:{title:'Lung, Ekblad, Bisogno · StatPearls (2024)',url:'https://www.ncbi.nlm.nih.gov/books/NBK526110/',kind:'Podręcznik · Anatomia mięśnia ramienno-promieniowego'},
@@ -29,7 +30,7 @@ const SOURCE={
 const choice=(q,opts,correct,why)=>({type:'choice',q,opts,correct,why});
 const LESSONS=[
 {
- id:'biceps',title:'Dlaczego biceps nie tylko zgina łokieć?',short:'Przyczep → kierunek ruchu',minutes:7,chapter:'Od budowy do ruchu',goal:'Powiążesz przyczep na kości promieniowej z odwracaniem przedramienia.',sources:['arm','movement','bicepsAnatomy','brachialis','brachioradialis'],caveat:'Schemat kości pokazuje zasadę ruchu, nie dokładną geometrię stawu. Odczucie napięcia nie mierzy aktywacji ani wzrostu mięśnia.',
+ id:'biceps',title:'Dlaczego biceps nie tylko zgina łokieć?',short:'Przyczep → kierunek ruchu',minutes:7,chapter:'Od budowy do ruchu',goal:'Powiążesz przyczep na kości promieniowej z odwracaniem przedramienia.',sources:['forearmBones','arm','movement','bicepsAnatomy','brachialis','brachioradialis'],caveat:'Schemat kości pokazuje zasadę ruchu, nie dokładną geometrię stawu. Odczucie napięcia nie mierzy aktywacji ani wzrostu mięśnia.',
  theory:[
  {title:'Dwa ruchy, dwa różne pytania',diagram:'forearm',text:'<p><b>Zginanie łokcia</b> zmniejsza kąt między ramieniem a przedramieniem. <b>Odwracanie przedramienia (supinacja)</b> obraca dłoń ku górze, gdy łokieć jest zgięty. To ruch w stawach promieniowo-łokciowych; nie wymaga prostowania łokcia.</p><p>Przedramię ma dwie kości. Promieniowa leży po stronie kciuka, łokciowa po stronie małego palca. Przy nawracaniu promieniowa krzyżuje łokciową. Przy odwracaniu wraca do ustawienia równoległego.</p>'},
  {title:'Przyczep wyjaśnia funkcję',text:'<p>Mięsień dwugłowy ramienia zaczyna się dwiema głowami na łopatce: długą nad panewką, krótką na wyrostku kruczym. Jego ścięgno kończy się na <b>guzowatości kości promieniowej</b>. Pociągnięcie tej kości może zarówno zginać łokieć, jak i odwracać przedramię.</p><p><b>Ramienny</b> biegnie z przedniej części kości ramiennej do kości łokciowej. Zgina łokieć także wtedy, gdy dłoń jest odwrócona w dół. <b>Ramienno-promieniowy</b> biegnie z bocznej części kości ramiennej do dalszej części promieniowej i pomaga zginać łokieć, zwłaszcza przy chwycie neutralnym.</p><p>Biceps przekracza bark i łokieć: ustawienie obu stawów zmienia jego długość. Ramienny przekracza tylko łokieć. Przyczep nie mówi jednak sam w sobie, który chwyt da większą hipertrofię.</p>'}

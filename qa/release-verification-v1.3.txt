@@ -1,0 +1,9 @@
+Release 1.3.0 / versionCode 4
+Bytes: 60461063
+SHA256: 9e898416ece1e691e3851311993d50352517d21e381cb13a3a33b9d9b3cd2b9e
+Exact packaged assets: 46
+Certificate SHA256: 9ea2c74118a6c2c73b81bce8d7bbe43112482ada4ca46ec74969ee9994f27707
+APK signature v2/v3 verified. Same certificate as v1.2.
+Installed final non-debug APK with install -r on owned Android 15 emulator.
+Package flags omit DEBUGGABLE; no WebView devtools socket.
+Native fullscreen and restart QA: qa/native/review-v1.3.json
