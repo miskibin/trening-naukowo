@@ -65,5 +65,13 @@
     "file": "android/app/src/main/assets/images/art/evidence-labelled.png",
     "mode": "built-in image generation",
     "prompt": "Create sophisticated Polish educational illustrated infographic portrait white, highquality handpainted scientific objects and crisp Polish typography, no fabricated studyresults or statistics. Threepanels. Top 'Mechanizm ≠ gotowy dowód u ludzi': small cellreceptor moleculeimage left and groupofhumanswithmuscleultrasoundprobe right, between arrowlabel 'Hipoteza → badanie efektu'. Middle 'Korelacja: możliwa wspólna przyczyna': centralcalendar workoutanddieticons labelled 'Trening / dieta / obciążenie pracą', two separate arrows to sleepbedicon 'Sen' and to barbell +muscleicon 'Wynik'; do NOT addarrowfromsleeptowynik provingcausation. Below that small randomallocationvisual two groupspeople with arrow fromonecommon groupsplit intoAandB caption 'Randomizacja pomaga porównać grupy'. Bottom 'Dopasuj pomiar i czas': firsttimeline start bloodtube 'Hormon po sesji' atnearbeginning and muscleultrasound 'Rozmiar mięśnia po tygodniach' atfarend, clearly different outcomes, NOmadeupvalues. secondtimeline closedbooknotebook 'Próba z pamięci teraz' to closedbookquestionmark later 'Test po czasie'. Footnote 'Sprawdzaj: co mierzono · kogo badano · kiedy'. Readablelargelabels, intentionalwhiteblueorgange academicstyle."
+  },
+  {
+    "id": "rotation-labelled",
+    "file": "android/app/src/main/assets/images/art/rotation-labelled.png",
+    "mode": "built-in image editing",
+    "reference": "OpenStax Fundamentals of Nursing 22.1 pronation/supination diagram",
+    "license": "CC BY-NC-SA 4.0",
+    "prompt": "Two distinct forearms: pronation radius crosses ulna, supination bones parallel; radius follows thumb. Polish anatomical leaders. Rejected parallel-bone variant; corrected crossing and leader ending on ivory ulna."
   }
 ]

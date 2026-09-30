@@ -1,0 +1,297 @@
+{
+  "version": "1.2.0",
+  "offline": true,
+  "assetFiles": 45,
+  "imageDecode": {
+    "count": 36,
+    "failures": [],
+    "images": [
+      {
+        "src": "images/art/adaptation-labelled.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "images/art/adaptation.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/biceps-attachments.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "images/art/biceps.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/calcium-atp.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "images/art/elbow-muscles.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "images/art/endocrine-labelled.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "images/art/energy.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/evidence-labelled.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "images/art/evidence.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/fuel-labelled.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "images/art/fuel.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/glands.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/hpg-labelled.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "images/art/hpg.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/learning.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/metabolism-labelled.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "images/art/motor-labelled.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "images/art/motor.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/movement.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/nutrition.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/press-attachments.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 1536
+      },
+      {
+        "src": "images/art/press.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/rotation-labelled.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/sarcomere.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/signals.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/sleep.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/art/torque.png",
+        "decoded": true,
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "src": "images/biceps-radial-tuberosity-cureus.png",
+        "decoded": true,
+        "width": 986,
+        "height": 1338
+      },
+      {
+        "src": "images/motor-units.png",
+        "decoded": true,
+        "width": 1024,
+        "height": 442
+      },
+      {
+        "src": "images/pronation-supination-openstax.webp",
+        "decoded": true,
+        "width": 291,
+        "height": 453
+      },
+      {
+        "src": "images/reference/forearm-attachments-gray213.png",
+        "decoded": true,
+        "width": 700,
+        "height": 1245
+      },
+      {
+        "src": "images/reference/pectoralis-major-openstax-11-23.webp",
+        "decoded": true,
+        "width": 2229,
+        "height": 2371
+      },
+      {
+        "src": "images/reference/proximal-radius-landmarks-commons.png",
+        "decoded": true,
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "images/reference/upper-limb-muscles-openstax.webp",
+        "decoded": true,
+        "width": 2381,
+        "height": 2938
+      },
+      {
+        "src": "images/sliding-filaments.webp",
+        "decoded": true,
+        "width": 1650,
+        "height": 1510
+      }
+    ]
+  },
+  "v11UpdateRetainedStep1": {
+    "key": "trening-naukowo-v1",
+    "active": {
+      "id": "biceps",
+      "mode": "learn"
+    },
+    "step": 1,
+    "reader": "2/6"
+  },
+  "polishNoteWritten": {
+    "active": {
+      "id": "biceps",
+      "mode": "learn"
+    },
+    "step": 4,
+    "text": "Moja notatka: napięcie zależy od kąta i ramienia momentu siły.",
+    "textarea": "Moja notatka: napięcie zależy od kąta i ramienia momentu siły.",
+    "reader": "5/6"
+  },
+  "polishNoteAfterForceStop": {
+    "key": "trening-naukowo-v1",
+    "active": {
+      "id": "biceps",
+      "mode": "learn"
+    },
+    "step": 4,
+    "text": "Moja notatka: napięcie zależy od kąta i ramienia momentu siły.",
+    "textarea": "Moja notatka: napięcie zależy od kąta i ramienia momentu siły.",
+    "reader": "5/6"
+  },
+  "androidBackStep4To3": {
+    "step": 3,
+    "reader": "4/6"
+  },
+  "atlas": {
+    "step": "2/6",
+    "title": "Przyczep wyjaśnia funkcję",
+    "illustration": "images/art/biceps-attachments.png"
+  },
+  "atlasScreenshot": "qa/native/v1.2-atlas-step1.png",
+  "zoomOpened": {
+    "open": true,
+    "zoomed": true,
+    "pressed": "true"
+  },
+  "androidBackClosedZoom": {
+    "dialogOpen": false,
+    "step": 1,
+    "reader": "2/6"
+  },
+  "androidBackStep1To0": {
+    "step": 0,
+    "reader": "1/6"
+  },
+  "androidBackStep0ToHome": {
+    "onHome": true,
+    "resume": true,
+    "active": {
+      "id": "biceps",
+      "mode": "learn"
+    },
+    "step": 0
+  },
+  "verifiedAtUtc": "2026-09-30T21:27:33.375Z",
+  "decodeMethod": "Sequential image decoding, matching bounded per-screen use. Simultaneous 35-image stress exhausted emulator decoder capacity; all individual images passed.",
+  "noteCommitWaitMs": 6000,
+  "rotationPlate": {
+    "src": "images/art/rotation-labelled.png",
+    "verifiedAtUtc": "2026-09-30T21:39:38.079Z"
+  }
+}

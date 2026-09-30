@@ -1,7 +1,7 @@
 {
   "apk": "C:\\Users\\skibi\\Documents\\ChatGPT\\silka\\TreningNaukowo.apk",
-  "bytes": 58797937,
-  "sha256": "f708aac8f10cf354872c136512e75e70d8ca19b12767006575382ca0e13a4e4e",
+  "bytes": 60452806,
+  "sha256": "0006f40ae6f7acbdd829372cdd866a750197a64cc31b3fe0b2c2d9de4005b23c",
   "exact_assets": [
     "assets/app.js",
     "assets/diagrams.js",
@@ -29,6 +29,7 @@
     "assets/images/art/nutrition.png",
     "assets/images/art/press-attachments.png",
     "assets/images/art/press.png",
+    "assets/images/art/rotation-labelled.png",
     "assets/images/art/sarcomere.png",
     "assets/images/art/signals.png",
     "assets/images/art/sleep.png",

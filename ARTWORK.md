@@ -1,6 +1,6 @@
 # Ilustracje wersji 1.2
 
-11 nowych podpisanych plansz wygenerowano wbudowanym `image_gen`, bez Qwen/sfgpu. Pliki PNG 1024 × 1536 px: `android/app/src/main/assets/images/art/*-labelled.png`, `biceps-attachments.png`, `elbow-muscles.png`, `press-attachments.png`, `calcium-atp.png`. Prompty: [art-manifest-v1.2.json](tools/art-manifest-v1.2.json).
+12 nowych podpisanych plansz wygenerowano wbudowanym `image_gen`, bez Qwen/sfgpu. Pliki PNG 1024 × 1536 px: `android/app/src/main/assets/images/art/*-labelled.png`, `biceps-attachments.png`, `elbow-muscles.png`, `press-attachments.png`, `calcium-atp.png`. Prompty: [art-manifest-v1.2.json](tools/art-manifest-v1.2.json).
 
 Wszystkie 20 części teorii przedstawiają strukturę lub mechanizm na widocznej planszy i definiują podpisy po polsku. Guzowatość jest pokazana jako wypukłość kości poniżej głowy/szyjki, a nie mięsień. Oryginalna rycina kości promieniowej jest obok jako odniesienie.
 

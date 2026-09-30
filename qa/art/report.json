@@ -4,7 +4,7 @@
       "label": "biceps:learn:0",
       "srcs": [
         "images/art/movement.png",
-        "images/pronation-supination-openstax.webp",
+        "images/art/rotation-labelled.png",
         "images/pronation-supination-openstax.webp",
         "images/biceps-radial-tuberosity-cureus.png"
       ]
@@ -557,7 +557,7 @@
       "label": "small phone 360",
       "srcs": [
         "images/art/movement.png",
-        "images/pronation-supination-openstax.webp",
+        "images/art/rotation-labelled.png",
         "images/pronation-supination-openstax.webp",
         "images/biceps-radial-tuberosity-cureus.png"
       ]
@@ -566,7 +566,7 @@
       "label": "phone landscape",
       "srcs": [
         "images/art/movement.png",
-        "images/pronation-supination-openstax.webp",
+        "images/art/rotation-labelled.png",
         "images/pronation-supination-openstax.webp",
         "images/biceps-radial-tuberosity-cureus.png"
       ]
@@ -664,9 +664,9 @@
       "height": 1024
     },
     {
-      "src": "images/pronation-supination-openstax.webp",
-      "width": 291,
-      "height": 453
+      "src": "images/art/rotation-labelled.png",
+      "width": 1536,
+      "height": 1024
     },
     {
       "src": "images/art/biceps-attachments.png",

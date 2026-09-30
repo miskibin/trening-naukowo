@@ -25,13 +25,13 @@ Kod i dokumentacja są w repozytorium; pliki APK i ich sumy SHA-256 są załącz
 - Każdy krok i wpisany tekst zapisują się lokalnie. Przerwaną lekcję można kontynuować.
 - Ukończenie lekcji i powodzenie powtórki po czasie to odrębne dane. Wcześniejsza próba nie przesuwa terminu. Błąd w pierwszej odpowiedzi albo niepełne wyjaśnienie daje powrót następnego dnia.
 - Pierwsza powtórka po 24 godzinach; kolejne po udanych próbach: 3, 7, 14 i 30 dni. To jawna reguła dydaktyczna, nie dowód indywidualnej optymalizacji.
-- Każda część lekcji i powtórki ma ilustrację; dotknięcie otwiera powiększenie. Cały kurs, 27 wygenerowanych ilustracji i 8 ilustracji źródłowych znajdują się w APK. Linki do publikacji otwierają przeglądarkę i wymagają internetu.
+- Każda część lekcji i powtórki ma ilustrację; dotknięcie otwiera powiększenie. Cały kurs, 28 wygenerowanych ilustracji i 8 ilustracji źródłowych znajdują się w APK. Linki do publikacji otwierają przeglądarkę i wymagają internetu.
 
 ## Źródła i ilustracje
 
 Bibliografia i ograniczenia przy każdej lekcji są dostępne po rozwinięciu. Dodatkowa notatka badawcza: `SOURCES.md`. Tekst jest autorskim opracowaniem wiedzy z podręczników, badań i przeglądów; nie kopiowano treści mockupów.
 
-W wersji 1.2 każda z 20 części teorii ma widoczne plansze uczące struktur oraz objaśnienia podpisów. Dodano 11 podpisanych plansz: początki i zakończenie bicepsa, trzy zginacze łokcia, piersiowy i triceps, wapń–ATP, jednostki motoryczne, metabolizm, składniki pokarmowe, przebudowa, oś HPG, gruczoły oraz rozumienie badań. Osobne zbliżenie kości promieniowej odróżnia głowę, szyjkę i guzowatość.
+W wersji 1.2 każda z 20 części teorii ma widoczne plansze uczące struktur oraz objaśnienia podpisów. Dodano 12 podpisanych plansz: początki i zakończenie bicepsa, trzy zginacze łokcia, piersiowy i triceps, wapń–ATP, jednostki motoryczne, metabolizm, składniki pokarmowe, przebudowa, oś HPG, gruczoły oraz rozumienie badań. Osobne zbliżenie kości promieniowej odróżnia głowę, szyjkę i guzowatość.
 
 Prompty i zakres: `ARTWORK.md`, `tools/art-manifest-v1.2.json`; specyfikacja wszystkich części: `VISUAL_TEACHING_SPEC.md`. Błędne warianty przyczepu piersiowego odrzucono i zastąpiono zbliżeniem poprawionym po kontroli anatomii. W pytaniach nadal są obrazy bez podpisów odpowiedzi. Wykres prędkości jest modelowy.
 
@@ -43,7 +43,9 @@ Zewnętrzne ilustracje: OpenStax oraz Casey Henley (Michigan State University), 
 
 `qa/art/report.json` sprawdza ilustracje w 60 częściach lekcji i 30 częściach powtórek oraz dwa układy ekranu. Wszystkie 31 ilustracji używanych w głównych widokach załadowało się; powiększenie i cofanie działają. Zrzuty obu części teorii dla każdego tematu są w `qa/art/`. `qa/navigation-v1.2.json` potwierdza cofanie z zachowaniem danych, zamykanie obrazu przed cofaniem kroku oraz brak podwójnego zaliczenia powtórki.
 
-Weryfikacja wersji 1.1: `qa/native/native-check-v1.1.json` potwierdza dekodowanie wszystkich 20 obrazów z APK na Androidzie 15 w trybie samolotowym, powiększanie i zamykanie obrazu fizycznym przyciskiem Wstecz. `qa/native/v1-update-v1.1.json` potwierdza zachowanie lekcji przy aktualizacji z prawdziwego APK 1.0. `qa/native/text-restart-v1.1.json` potwierdza dokładne zachowanie polskiej notatki po wymuszonym zamknięciu. `qa/native/keyboard-v1.1.json` potwierdza dopasowanie obszaru aplikacji i przycisk nad klawiaturą. Końcowy podpis, identyczność wszystkich 27 zasobów i sprzątanie własnego emulatora: `qa/release-verification-v1.1.txt`. Starsze raporty zachowano osobno.
+Weryfikacja 1.2: `qa/native/navigation-v1.2.json` potwierdza zachowanie kroku przy aktualizacji 1.1 → 1.2, dekodowanie 36 obrazów pojedynczo offline, polską notatkę po wymuszonym zamknięciu (po 6 sekundach na zapis), zamknięcie powiększenia oraz cofanie kolejno 4→3, 1→0 i wyjście z kroku 0. Test jednoczesnego dekodowania 35 obrazów przekroczył możliwości dekodera emulatora; żaden plik nie okazał się uszkodzony. Aplikacja pokazuje kilka obrazów na ekranie. Końcowe APK z wyłączonym debugowaniem zainstalowano i obejrzano na Androidzie 15.
+
+Historia weryfikacji wersji 1.1: `qa/native/native-check-v1.1.json` potwierdza dekodowanie wszystkich 20 obrazów z APK na Androidzie 15 w trybie samolotowym, powiększanie i zamykanie obrazu fizycznym przyciskiem Wstecz. `qa/native/v1-update-v1.1.json` potwierdza zachowanie lekcji przy aktualizacji z prawdziwego APK 1.0. `qa/native/text-restart-v1.1.json` potwierdza dokładne zachowanie polskiej notatki po wymuszonym zamknięciu. `qa/native/keyboard-v1.1.json` potwierdza dopasowanie obszaru aplikacji i przycisk nad klawiaturą. Końcowy podpis, identyczność wszystkich 27 zasobów i sprzątanie własnego emulatora: `qa/release-verification-v1.1.txt`. Starsze raporty zachowano osobno.
 
 Nie wykonano testu na fizycznym Samsungu Galaxy S24 Ultra. Tekstowe wyjaśnienia są oceniane przez użytkownika według pokazanych kryteriów; nie ma automatycznego oceniania znaczenia tekstu. Aplikacja edukuje, nie diagnozuje i nie zaleca terapii.
 

@@ -1,0 +1,12 @@
+Trening Naukowo 1.2.0 / versionCode 3
+SHA256: 0006f40ae6f7acbdd829372cdd866a750197a64cc31b3fe0b2c2d9de4005b23c
+Bytes: 60452806
+Signature v2/v3 verified; certificate unchanged from v1.0/v1.1: 9ea2c74118a6c2c73b81bce8d7bbe43112482ada4ca46ec74969ee9994f27707
+All45 APK assets match current source files exactly; zipalign passed. minSdk26 / targetSdk35 / compileSdk36.
+Web: full10lesson flow, wrong-answer correction, state/reviews, 92illustration screens,31 main-view images,20theory sections, backward navigation and no double review submission passed.
+Native API35 offline: all36 images decoded sequentially. Simultaneous35-image stress exceeded decoder capacity; individual files all passed.
+Actual v1.1 release -> v1.2 debug update preserved step1. Polish note survived force-stop/restart after6seconds for disk commit.
+Physical Android Back:4->3, zoom closes first,1->0,0->resumablehome passed.
+Final non-debug release installed and launched; noDEBUGGABLE/no WebView debug socket.
+Physical S24 Ultra not tested.
+Owned emulator-5586 stopped; own9223forward removed; checked workspace qa/avd removed. Other AVDs and global adb server untouched.

@@ -43,3 +43,6 @@ These are reference illustrations for close inspection inside the learning app, 
 - Credit: Figure is an original hand-drawn illustration by the article authors. Article is open access under CC BY 4.0; cite the authors and article when redistributing the figure.
 - Teaching use: Shows the biceps tendon ending at the radial tuberosity and the bicipital aponeurosis extending into forearm fascia.
 - Limitation: This is a clinical review illustration rather than a general anatomy textbook plate; the pencil rendering is schematic and should be paired with a clear explanation that the distal biceps inserts on the radius.
+
+## rotation-labelled.png (1.2)
+Generated adaptation of the OpenStax Fundamentals of Nursing, section 22.1 pronation/supination diagram, with corrected separated forearms and Polish labels. Attribution: OpenStax; adapted with built-in image_gen. CC BY-NC-SA 4.0 applies to this image. Source: https://openstax.org/books/fundamentals-of-nursing/pages/22-1-importance-of-activity-movement-and-alignment . Original diagram remains unchanged in pronation-supination-openstax.webp.
