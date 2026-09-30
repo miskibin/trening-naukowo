@@ -1,7 +1,7 @@
 {
   "apk": "C:\\Users\\skibi\\Documents\\ChatGPT\\silka\\TreningNaukowo.apk",
-  "bytes": 60452806,
-  "sha256": "0006f40ae6f7acbdd829372cdd866a750197a64cc31b3fe0b2c2d9de4005b23c",
+  "bytes": 60461063,
+  "sha256": "9e898416ece1e691e3851311993d50352517d21e381cb13a3a33b9d9b3cd2b9e",
   "exact_assets": [
     "assets/app.js",
     "assets/diagrams.js",
@@ -46,6 +46,7 @@
     "assets/images/sliding-filaments.webp",
     "assets/index.html",
     "assets/lessons.js",
+    "assets/mnemonics.js",
     "assets/styles.css",
     "assets/teaching.js"
   ]
