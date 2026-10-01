@@ -1,0 +1,159 @@
+{
+  "tests": [
+    "Final content of all 20 sections decodes offline",
+    "New glycogen and HPG illustrations fit native full screen",
+    "Selected endocrine panel fits native full screen",
+    "Physical Back closes each view without changing the step"
+  ],
+  "offline": true,
+  "sections": [
+    {
+      "id": "biceps",
+      "step": 0,
+      "images": [
+        "images/art/movement.png",
+        "images/art/rotation-labelled.png"
+      ]
+    },
+    {
+      "id": "biceps",
+      "step": 1,
+      "images": [
+        "images/art/biceps-attachments.png",
+        "images/art/biceps-attachments.png",
+        "images/art/elbow-muscles.png",
+        "images/art/elbow-muscles.png"
+      ]
+    },
+    {
+      "id": "torque",
+      "step": 0,
+      "images": []
+    },
+    {
+      "id": "torque",
+      "step": 1,
+      "images": [
+        "images/art/press-attachments.png",
+        "images/art/press-attachments.png"
+      ]
+    },
+    {
+      "id": "sarcomere",
+      "step": 0,
+      "images": [
+        "images/sliding-filaments.webp"
+      ]
+    },
+    {
+      "id": "sarcomere",
+      "step": 1,
+      "images": [
+        "images/art/calcium-atp.png",
+        "images/art/calcium-atp.png"
+      ]
+    },
+    {
+      "id": "motor",
+      "step": 0,
+      "images": [
+        "images/art/motor-labelled.png",
+        "images/motor-units.png"
+      ]
+    },
+    {
+      "id": "motor",
+      "step": 1,
+      "images": [
+        "images/art/motor-labelled.png",
+        "images/art/motor-labelled.png"
+      ]
+    },
+    {
+      "id": "energy",
+      "step": 0,
+      "images": [
+        "images/art/energy.png"
+      ]
+    },
+    {
+      "id": "energy",
+      "step": 1,
+      "images": []
+    },
+    {
+      "id": "fuel",
+      "step": 0,
+      "images": [
+        "images/art/glycogen-cell-v1.4.png"
+      ]
+    },
+    {
+      "id": "fuel",
+      "step": 1,
+      "images": [
+        "images/art/nutrition.png"
+      ]
+    },
+    {
+      "id": "adaptation",
+      "step": 0,
+      "images": [
+        "images/art/adaptation-labelled.png"
+      ]
+    },
+    {
+      "id": "adaptation",
+      "step": 1,
+      "images": [
+        "images/art/adaptation-labelled.png"
+      ]
+    },
+    {
+      "id": "testosterone",
+      "step": 0,
+      "images": [
+        "images/art/hpg-labelled.png",
+        "images/art/hpg-labelled.png"
+      ]
+    },
+    {
+      "id": "testosterone",
+      "step": 1,
+      "images": [
+        "images/art/hpg-feedback-v1.4.png"
+      ]
+    },
+    {
+      "id": "signals",
+      "step": 0,
+      "images": [
+        "images/art/signals.png",
+        "images/art/endocrine-labelled.png"
+      ]
+    },
+    {
+      "id": "signals",
+      "step": 1,
+      "images": [
+        "images/art/endocrine-labelled.png",
+        "images/art/endocrine-labelled.png"
+      ]
+    },
+    {
+      "id": "evidence",
+      "step": 0,
+      "images": [
+        "images/art/evidence-labelled.png"
+      ]
+    },
+    {
+      "id": "evidence",
+      "step": 1,
+      "images": [
+        "images/art/evidence-labelled.png",
+        "images/art/evidence-labelled.png"
+      ]
+    }
+  ]
+}

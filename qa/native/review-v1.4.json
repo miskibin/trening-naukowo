@@ -1,0 +1,308 @@
+{
+  "tests": [
+    "Real release v1.3 UI progress at step 2 retained by install -r v1.4",
+    "Native immersive bars hidden, full viewport fit, real pinch zoom; Android Back closes viewer and restores system bars without changing step",
+    "Polish note and step retained after force-stop (6-second storage commit window); system Back still moves one step",
+    "All 20 rewritten sections load contextual figures sequentially offline with no horizontal overflow"
+  ],
+  "offline": true,
+  "updatedState": {
+    "active": {
+      "id": "biceps",
+      "mode": "learn"
+    },
+    "step": 1,
+    "count": "2/6"
+  },
+  "systemGuidanceAcknowledged": true,
+  "viewer": {
+    "height": 915,
+    "dialog": {
+      "x": 0,
+      "y": 0,
+      "w": 412.19049072265625,
+      "h": 915.047607421875
+    },
+    "fit": true,
+    "descriptionOpen": false
+  },
+  "crop": {
+    "region": "0,0,1024,503",
+    "imageLeft": "0px",
+    "imageTop": "0px"
+  },
+  "restart": {
+    "step": 4,
+    "text": "Promieniowa jest po stronie kciuka, a czubek łokcia należy do łokciowej."
+  },
+  "editorial": [
+    {
+      "id": "biceps",
+      "step": 0,
+      "images": [
+        {
+          "src": "images/art/movement.png",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "src": "images/art/rotation-labelled.png",
+          "w": 1536,
+          "h": 1024
+        }
+      ]
+    },
+    {
+      "id": "biceps",
+      "step": 1,
+      "images": [
+        {
+          "src": "images/art/biceps-attachments.png",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "src": "images/art/biceps-attachments.png",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "src": "images/art/elbow-muscles.png",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "src": "images/art/elbow-muscles.png",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "torque",
+      "step": 0,
+      "images": []
+    },
+    {
+      "id": "torque",
+      "step": 1,
+      "images": [
+        {
+          "src": "images/art/press-attachments.png",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "src": "images/art/press-attachments.png",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "sarcomere",
+      "step": 0,
+      "images": [
+        {
+          "src": "images/sliding-filaments.webp",
+          "w": 1650,
+          "h": 1510
+        }
+      ]
+    },
+    {
+      "id": "sarcomere",
+      "step": 1,
+      "images": [
+        {
+          "src": "images/art/calcium-atp.png",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "src": "images/art/calcium-atp.png",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "motor",
+      "step": 0,
+      "images": [
+        {
+          "src": "images/art/motor-labelled.png",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "src": "images/motor-units.png",
+          "w": 1024,
+          "h": 442
+        }
+      ]
+    },
+    {
+      "id": "motor",
+      "step": 1,
+      "images": [
+        {
+          "src": "images/art/motor-labelled.png",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "src": "images/art/motor-labelled.png",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "step": 0,
+      "images": [
+        {
+          "src": "images/art/energy.png",
+          "w": 1536,
+          "h": 1024
+        }
+      ]
+    },
+    {
+      "id": "energy",
+      "step": 1,
+      "images": []
+    },
+    {
+      "id": "fuel",
+      "step": 0,
+      "images": [
+        {
+          "src": "images/art/fuel.png",
+          "w": 1536,
+          "h": 1024
+        }
+      ]
+    },
+    {
+      "id": "fuel",
+      "step": 1,
+      "images": [
+        {
+          "src": "images/art/nutrition.png",
+          "w": 1536,
+          "h": 1024
+        }
+      ]
+    },
+    {
+      "id": "adaptation",
+      "step": 0,
+      "images": [
+        {
+          "src": "images/art/adaptation-labelled.png",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "adaptation",
+      "step": 1,
+      "images": [
+        {
+          "src": "images/art/adaptation-labelled.png",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "testosterone",
+      "step": 0,
+      "images": [
+        {
+          "src": "images/art/hpg-labelled.png",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "src": "images/art/hpg-labelled.png",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "testosterone",
+      "step": 1,
+      "images": [
+        {
+          "src": "images/art/hpg-feedback-v1.4.png",
+          "w": 1122,
+          "h": 1402
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "step": 0,
+      "images": [
+        {
+          "src": "images/art/signals.png",
+          "w": 1536,
+          "h": 1024
+        },
+        {
+          "src": "images/art/endocrine-labelled.png",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "signals",
+      "step": 1,
+      "images": [
+        {
+          "src": "images/art/endocrine-labelled.png",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "src": "images/art/endocrine-labelled.png",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "step": 0,
+      "images": [
+        {
+          "src": "images/art/evidence-labelled.png",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "step": 1,
+      "images": [
+        {
+          "src": "images/art/evidence-labelled.png",
+          "w": 1024,
+          "h": 1536
+        },
+        {
+          "src": "images/art/evidence-labelled.png",
+          "w": 1024,
+          "h": 1536
+        }
+      ]
+    }
+  ]
+}

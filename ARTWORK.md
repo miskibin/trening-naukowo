@@ -25,3 +25,9 @@ Uzupełnienie stanowią cztery niezmienione ilustracje źródłowe: OpenStax (sa
 Kontrola aplikacji: `tools/art-qa.mjs` sprawdza obecność i dekodowanie ilustracji we wszystkich 90 krokach, powiększanie, Wstecz oraz układ na 360 px i w poziomie. Wynik: [qa/art/report.json](qa/art/report.json). `tools/qa.mjs` sprawdza pełne przejście lekcji, korektę błędów, zapis oraz odroczone powtórki: [qa/report.json](qa/report.json).
 
 Android 15, emulator offline: wszystkie 20 obrazów poprawnie zdekodowano z APK; powiększenie i systemowe cofanie działały. Aktualizacja 1.0 → 1.1 zachowała rozpoczętą lekcję, polska notatka przetrwała wymuszone zamknięcie, a klawiatura nie zasłaniała przycisku. Końcowy pakiet 1.1.0 ma 35 641 768 bajtów, podpis zgodny z poprzednią wersją i wyłączone debugowanie. Weryfikacja: [release-verification-v1.1.txt](qa/release-verification-v1.1.txt). Własny emulator został zamknięty i usunięty; fizycznego S24 Ultra nie testowano.
+
+## Wersja 1.4 — pojedyncze zagadnienia
+
+Złożone plansze są wyświetlane jako wybrane pojedyncze panele, również w pełnym ekranie. Wycofano z lekcji mylące przekroje hipertrofii oraz plansze glikogenu/metabolizmu. Źródłowe pliki pozostają jako historia; ich obecność w repo nie oznacza wykorzystania w aktualnej lekcji.
+
+Dwie nowe grafiki wygenerowano wbudowanym `image_gen`: `hpg-feedback-v1.4.png` (jedna oś i hamowanie) oraz `glycogen-cell-v1.4.png` (glikogen wewnątrz komórki). Prompty są w `tools/*-v1.4-prompt.txt`. Podpisy wyjaśniają umowne symbole. Dobór i kontrolę opisuje `CONTENT_REVIEW_V1.4.md`.

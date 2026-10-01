@@ -1,0 +1,180 @@
+{
+  "tests": [
+    "Header previous step retains graded answer, shuffled option order and exact previous step across reload",
+    "Back preserves movement observation and unfinished Polish explanation; explicit Exit resumes exact step",
+    "System Back closes image first, then previous lesson step, then exits from step zero",
+    "Review permits backward study; completed review cannot record twice or return to editable result",
+    "All 20 theory sections display contextual visuals and ordered explanation at 360px without overflow"
+  ],
+  "coverage": [
+    {
+      "id": "biceps",
+      "index": 0,
+      "plates": [
+        "movement",
+        "rotation"
+      ],
+      "paragraphs": 2
+    },
+    {
+      "id": "biceps",
+      "index": 1,
+      "plates": [
+        "biceps-attachments",
+        "biceps-attachments",
+        "elbow-muscles",
+        "elbow-muscles"
+      ],
+      "paragraphs": 4
+    },
+    {
+      "id": "torque",
+      "index": 0,
+      "plates": [],
+      "paragraphs": 3
+    },
+    {
+      "id": "torque",
+      "index": 1,
+      "plates": [
+        "press-attachments",
+        "press-attachments"
+      ],
+      "paragraphs": 3
+    },
+    {
+      "id": "sarcomere",
+      "index": 0,
+      "plates": [
+        "sliding-filaments"
+      ],
+      "paragraphs": 3
+    },
+    {
+      "id": "sarcomere",
+      "index": 1,
+      "plates": [
+        "calcium-atp",
+        "calcium-atp"
+      ],
+      "paragraphs": 3
+    },
+    {
+      "id": "motor",
+      "index": 0,
+      "plates": [
+        "motor-labelled",
+        "motor-units"
+      ],
+      "paragraphs": 2
+    },
+    {
+      "id": "motor",
+      "index": 1,
+      "plates": [
+        "motor-labelled",
+        "motor-labelled"
+      ],
+      "paragraphs": 3
+    },
+    {
+      "id": "energy",
+      "index": 0,
+      "plates": [
+        "energy"
+      ],
+      "paragraphs": 2
+    },
+    {
+      "id": "energy",
+      "index": 1,
+      "plates": [],
+      "paragraphs": 3
+    },
+    {
+      "id": "fuel",
+      "index": 0,
+      "plates": [
+        "glycogen-cell-v1.4"
+      ],
+      "paragraphs": 2
+    },
+    {
+      "id": "fuel",
+      "index": 1,
+      "plates": [
+        "nutrition"
+      ],
+      "paragraphs": 3
+    },
+    {
+      "id": "adaptation",
+      "index": 0,
+      "plates": [
+        "adaptation-labelled"
+      ],
+      "paragraphs": 3
+    },
+    {
+      "id": "adaptation",
+      "index": 1,
+      "plates": [
+        "adaptation-labelled"
+      ],
+      "paragraphs": 2
+    },
+    {
+      "id": "testosterone",
+      "index": 0,
+      "plates": [
+        "hpg-labelled",
+        "hpg-labelled"
+      ],
+      "paragraphs": 2
+    },
+    {
+      "id": "testosterone",
+      "index": 1,
+      "plates": [
+        "hpg-feedback-v1.4"
+      ],
+      "paragraphs": 2
+    },
+    {
+      "id": "signals",
+      "index": 0,
+      "plates": [
+        "signals",
+        "endocrine-labelled"
+      ],
+      "paragraphs": 3
+    },
+    {
+      "id": "signals",
+      "index": 1,
+      "plates": [
+        "endocrine-labelled",
+        "endocrine-labelled"
+      ],
+      "paragraphs": 3
+    },
+    {
+      "id": "evidence",
+      "index": 0,
+      "plates": [
+        "evidence-labelled"
+      ],
+      "paragraphs": 3
+    },
+    {
+      "id": "evidence",
+      "index": 1,
+      "plates": [
+        "evidence-labelled",
+        "evidence-labelled"
+      ],
+      "paragraphs": 3
+    }
+  ],
+  "errors": []
+}

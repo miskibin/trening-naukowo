@@ -28,7 +28,7 @@ await page.evaluate(()=>window.appBack());assert.equal(await step(),3);
 await click('exit');assert.equal(await page.evaluate(()=>route),'home');await click('start');assert.equal(await step(),3);
 tests.push('Back preserves movement observation and unfinished Polish explanation; explicit Exit resumes exact step');
 await page.evaluate(()=>{session().step=1;save();render();});
-await page.locator('[data-plate="biceps-attachments"] .art-button').click();
+await page.locator('[data-plate="biceps-attachments"] .art-button').first().click();
 await page.evaluate(()=>window.appBack());assert.equal(await step(),1);await page.locator('dialog').waitFor({state:'detached'});
 await page.evaluate(()=>window.appBack());assert.equal(await step(),0);
 await page.evaluate(()=>window.appBack());assert.equal(await page.evaluate(()=>route),'home');
@@ -47,11 +47,11 @@ const ids=await page.evaluate(()=>LESSONS.map(l=>l.id));
 for(const id of ids)for(let index=0;index<2;index++){
  await page.evaluate(({id,index})=>{state.completed=LESSONS.map(l=>l.id);start(id,'learn');session().step=index;render();},{id,index});
  await page.waitForFunction(()=>[...document.querySelectorAll('.teaching img')].every(i=>i.complete&&i.naturalWidth>0));
- assert(await page.locator('.term-key dt').count()>0);
+ assert(await page.locator('.teaching>p').count()>0);
  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),true);
- coverage.push({id,index,plates:await page.locator('[data-plate]').evaluateAll(es=>es.map(e=>e.dataset.plate)),terms:await page.locator('.term-key dt').allTextContents()});
+ coverage.push({id,index,plates:await page.locator('[data-plate]').evaluateAll(es=>es.map(e=>e.dataset.plate)),paragraphs:await page.locator('.teaching>p').count()});
 }
-tests.push('All 20 theory sections display decoded teaching plates and definitions at 360px without overflow');
+tests.push('All 20 theory sections display contextual visuals and ordered explanation at 360px without overflow');
 assert.deepEqual(errors,[]);
-await fs.writeFile('qa/navigation-v1.2.json',JSON.stringify({tests,coverage,errors},null,2));
+await fs.writeFile('qa/navigation-v1.4.json',JSON.stringify({tests,coverage,errors},null,2));
 await browser.close();console.log('PASS '+tests.length+' navigation/coverage checks across all 20 theory sections');

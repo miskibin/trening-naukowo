@@ -1,0 +1,631 @@
+{
+  "sections": [
+    {
+      "id": "biceps",
+      "step": 0,
+      "words": 88,
+      "text": "OD BUDOWY DO RUCHU · TEORIA\n\nDwa ruchy, dwa różne pytania\n\nZgięcie łokcia przybliża przedramię do ramienia. Obrót dłoni to inny ruch: przy zgiętym łokciu supinacja ustawia dłoń ku górze, a pronacja — ku dołowi.\n\nPorównaj ustawienie dłoni; łokieć pozostaje zgięty.\nSkojarzenie: Supinacja\n\nTen obrót zachodzi w stawach promieniowo-łokciowych. Kość promieniowa leży po stronie kciuka: przy pronacji krzyżuje łokciową, przy supinacji obie są równoległe. Łokciowa leży po stronie małego palca.\n\nTutaj łokcie są wyprostowane: przy supinacji dłoń jest skierowana do przodu. Niebieska kość to promieniowa.\nSkojarzenie: Łokciowa\nBibliografia"
+    },
+    {
+      "id": "biceps",
+      "step": 1,
+      "words": 151,
+      "text": "OD BUDOWY DO RUCHU · TEORIA\n\nPrzyczep wyjaśnia funkcję\n\nBiceps ma dwa początki na łopatce. Głowa długa zaczyna się na guzku nadpanewkowym — wyniosłości nad panewką stawu ramiennego. Głowa krótka zaczyna się na wyrostku kruczym, haczykowatym występie z przodu łopatki.\n\nBark: śledź dwa ścięgna od łopatki do mięśnia.\n\nKurczliwa część, brzusiec, przechodzi w ścięgno przenoszące pociągnięcie na kość. Główny dalszy przyczep bicepsa to guzowatość kości promieniowej: chropowata wypukłość poniżej głowy i szyjki, po stronie zwróconej ku łokciowej. Dzięki temu przebiegowi biceps zgina łokieć i odwraca przedramię.\n\nŁokieć: jasne ścięgno kończy się na zaznaczonej części kości.\nSkojarzenie: Guzowatość\n\nRamienny biegnie z kości ramiennej do łokciowej, więc może zginać łokieć niezależnie od obrotu promieniowej.\n\nMięsień ramienny: śledź dolne ścięgno do kości łokciowej.\n\nRamienno-promieniowy kończy się na promieniowej blisko nadgarstka i także pomaga w zgięciu. Zmiana chwytu zmienia warunki pracy tych mięśni; nie izoluje jednego z nich.\n\nRamienno-promieniowy: koniec ścięgna leży przy nadgarstku.\nBibliografia"
+    },
+    {
+      "id": "torque",
+      "step": 0,
+      "words": 114,
+      "text": "OD BUDOWY DO RUCHU · TEORIA\n\nZnaczenie ma odległość od osi\n\nMoment siły opisuje jej działanie obrotowe: siła × prostopadłe ramię. To ramię jest najkrótszą odległością od osi stawu do linii działania siły, a nie długością kości.\n\n10 N\n20 cm\noś łokcia\nKółko: oś łokcia. Strzałka: siła w dół. Poziomy odcinek: prostopadłe ramię.\n\nW modelu 10 N × 0,20 m = 2 N·m. Przy tej samej sile i ramieniu 0,40 m moment wynosi 4 N·m. Mięśnie muszą równoważyć większe działanie obrotowe obciążenia.\n\nSkojarzenie: Ramię siły\n\nGdy przedramię zbliża się do pionu, linia ciężaru przechodzi bliżej osi łokcia. Sam ten model nie wyznacza siły konkretnego mięśnia: pomija masę kończyny, przyspieszenie i geometrię przyczepów.\n\nBibliografia"
+    },
+    {
+      "id": "torque",
+      "step": 1,
+      "words": 116,
+      "text": "OD BUDOWY DO RUCHU · TEORIA\n\nStaw, przyczep, linia działania\nBark\n\nPiersiowy większy przywodzi ramię poziomo, ku środkowi klatki. Zaczyna się m.in. na obojczyku, mostku i chrząstkach żeber, a kończy na wardze bocznej bruzdy międzyguzkowej kości ramiennej. Przednia część naramiennego pomaga w ruchu ramienia.\n\nPrzyczep na kości ramiennej leży w pobliżu barku.\nŁokieć\n\nTriceps prostuje łokieć. Głowy boczna i przyśrodkowa zaczynają się na ramiennej, a długa — na łopatce, więc przekracza także bark. Wspólne ścięgno kończy się na wyrostku łokciowym, kostnym czubku łokcia.\n\nTrzy głowy dochodzą do wspólnego dalszego ścięgna.\n\nZmiana ustawienia łokci zmienia geometrię ruchu i wymagania w obu stawach. Mocniejsze odczucie w klatce nie jest pomiarem jej aktywacji ani dowodem większej przyszłej hipertrofii.\n\nBibliografia"
+    },
+    {
+      "id": "sarcomere",
+      "step": 0,
+      "words": 99,
+      "text": "JAK POWSTAJE SIŁA · TEORIA\n\nFilamenty przesuwają się, nie kurczą\n\nWłókno mięśniowe to długa komórka zawierająca miofibryle. W miofibryli powtarzają się sarkomery, odcinki między liniami Z. Ich cienkie filamenty zawierają aktynę, a grube — miozynę.\n\nRelaxed = rozluźniony; contracted = skrócony; Z line = linia Z. Porównaj oba stany.\n\nGłowy miozyny przesuwają aktynę ku środkowi. Rośnie nakładanie filamentów, a linie Z zbliżają się. Same filamenty nie muszą się skracać; pasmo A, odpowiadające długości grubych filamentów, zachowuje szerokość.\n\nSkojarzenie: Przesuwanie\n\nMięsień może też wytwarzać napięcie przy niemal stałej długości całego mięśnia — to praca izometryczna, np. utrzymywanie nieruchomego obciążenia.\n\nBibliografia"
+    },
+    {
+      "id": "sarcomere",
+      "step": 1,
+      "words": 108,
+      "text": "JAK POWSTAJE SIŁA · TEORIA\n\nWapń otwiera dostęp; ATP podtrzymuje cykl\n\nPobudzenie błony włókna prowadzi do uwolnienia Ca²⁺ z siateczki sarkoplazmatycznej, wewnętrznego magazynu wapnia. Wapń wiąże troponinę; przesuwa się tropomiozyna, odsłaniając miejsca wiązania miozyny na aktynie.\n\nPo lewej spoczynek; po prawej stan po związaniu wapnia.\n\nW cyklu mostka przyłączenie ATP odłącza głowę miozyny od aktyny. Rozkład ATP do ADP i fosforanu nieorganicznego (Pi) przygotowuje głowę do kolejnego cyklu; uwolnienie produktów wiąże się z wytwarzaniem ruchu i siły.\n\nŚledź cykl pojedynczej głowy, nie całego mięśnia.\n\nPompy zużywające ATP przenoszą Ca²⁺ z powrotem do siateczki. Gdy jego stężenie spada, miejsca na aktynie znów są osłaniane. Rozluźnienie również wymaga energii.\n\nBibliografia"
+    },
+    {
+      "id": "motor",
+      "step": 0,
+      "words": 85,
+      "text": "JAK POWSTAJE SIŁA · TEORIA\n\nJednostka motoryczna to zespół\n\nJednostka motoryczna to jeden neuron ruchowy i wszystkie włókna mięśniowe, które unerwia. Jego akson, długa wypustka przewodząca impulsy, rozgałęzia się do tych włókien.\n\nTrzy włókna są przykładem, a nie stałą wielkością jednostki.\n\nJeden mięsień zawiera wiele takich jednostek. Włókna należące do różnych neuronów mogą być przemieszane — jednostka nie jest osobnym, zwartym kawałkiem mięśnia.\n\nKolor oznacza przynależność włókna do neuronu, nie typ włókna. Motor unit = jednostka; motor pool = pula neuronów mięśnia.\nSkojarzenie: Jednostka\nBibliografia"
+    },
+    {
+      "id": "motor",
+      "step": 1,
+      "words": 102,
+      "text": "JAK POWSTAJE SIŁA · TEORIA\n\nWięcej jednostek i częstsze impulsy\n\nRekrutacja oznacza dołączanie jednostek. Przy stopniowym zwiększaniu wymagań zwykle najpierw aktywują się jednostki o niższym progu, potem o wyższym — to zasada wielkości. Wcześniejsze jednostki mogą nadal pracować.\n\nKażdy nowy neuron oznacza kolejną aktywną jednostkę.\n\nCzęstość pobudzeń dotyczy jednostek już aktywnych. Gdy następny impuls przychodzi przed pełnym rozluźnieniem włókna, odpowiedzi mogą się sumować i zwiększać napięcie.\n\nTen sam neuron, różne odstępy między impulsami. Kreski nie mają skali czasu.\n\nW zmęczeniu dodatkowe pobudzanie i rekrutacja mogą częściowo kompensować spadek możliwości włókien. Ta rezerwa jest ograniczona; nie gwarantuje utrzymania siły ani prędkości ruchu.\n\nBibliografia"
+    },
+    {
+      "id": "energy",
+      "step": 0,
+      "words": 108,
+      "text": "ENERGIA I ADAPTACJA · TEORIA\n\nATP trzeba stale odtwarzać\n\nMostki miozynowe i pompy komórki zużywają ATP. Jego niewielki zapas musi być stale odtwarzany z ADP. Trzy współpracujące systemy robią to różnymi drogami:\n\nFosfokreatyna (PCr)\n\nPCr przekazuje fosforan ADP: PCr + ADP → kreatyna + ATP.\n\nGlikoliza\n\nPrzemiany glukozy do pirogronianu dostarczają ATP; sama glikoliza nie wymaga tlenu.\n\nPrzemiany tlenowe\n\nUtlenianie substratów pochodzących m.in. z węglowodanów i tłuszczów; wykorzystuje tlen.\n\nGlikoliza zachodzi w cytoplazmie. Mitochondria uczestniczą w przemianach tlenowych. Udział systemów zależy m.in. od intensywności, czasu wysiłku i dostępności substratów; nie przełączają się kolejno jak trzy wyłączniki.\n\nPomarańczowe mitochondria leżą między czerwonymi miofibrylami. Ilustracja nie pokazuje udziału systemów.\nBibliografia"
+    },
+    {
+      "id": "energy",
+      "step": 1,
+      "words": 133,
+      "text": "ENERGIA I ADAPTACJA · TEORIA\n\nZwolnienie ma kilka przyczyn\n\nSpadek prędkości kolejnych powtórzeń jest obserwacją. Nie mierzy bezpośrednio stężenia ATP, PCr ani aktywności układu nerwowego.\n\n1\n2\n3\n4\n5\n6\nPrędkość · jednostki umowne\nPowtórzenie\nPrzykładowy trend prędkości. To model dydaktyczny, nie zapis badania ani Twojej serii.\n\nW intensywnej serii maleje PCr, a zmiany m.in. stężenia Pi mogą zaburzać pracę mostków i regulację wapnia. Może zmieniać się też pobudzanie nerwowe. Zmęczenie ma więc kilka współdziałających mechanizmów.\n\nAllen i wsp. omawiają mechanizmy komórkowe, których znaczenie zależy od warunków. Zwolnienie ruchu nie oznacza, że cały zapas ATP spadł do zera.\n\nAllen, Lamb, Westerblad (2008)\n\nPo przerwie odtworzenie części PCr może poprawić wynik, ale sama poprawa nie dowodzi tej jednej przyczyny. Mleczan może być paliwem; nie wyjaśnia sam całego zmęczenia ani bolesności następnego dnia.\n\nBibliografia"
+    },
+    {
+      "id": "fuel",
+      "step": 0,
+      "words": 118,
+      "text": "ENERGIA I ADAPTACJA · TEORIA\n\nPosiłek nie zamienia się od razu w mięsień\n\nTrawienie węglowodanów dostarcza cukrów prostych. Glukoza po wchłonięciu trafia do krwi, a z niej do tkanek. Komórki mogą wykorzystać ją do odtwarzania ATP lub zmagazynować jako glikogen, rozgałęziony łańcuch jednostek glukozy. Znajduje się on w cytoplazmie, wewnątrz błony komórkowej.\n\nPrzekrój pojedynczego włókna. Złote kulki i powiększenie są symboliczne, bez skali.\nMięsień\nWłasny glikogen wykorzystuje przede wszystkim lokalnie; nie uwalnia z niego wolnej glukozy do krwi tak jak wątroba.\nWątroba\nPomaga utrzymać glukozę we krwi, m.in. dla innych tkanek między posiłkami.\nSkojarzenie: Dwa magazyny\n\nInsulina wspiera pobieranie glukozy przez mięśnie, lecz skurcz również zwiększa jej transport. Insulina nie jest jedynym warunkiem dopływu paliwa podczas ruchu.\n\nBibliografia"
+    },
+    {
+      "id": "fuel",
+      "step": 1,
+      "words": 123,
+      "text": "ENERGIA I ADAPTACJA · TEORIA\n\nRóżne składniki, różne role\n\nBiałko z pokarmu jest trawione do aminokwasów. Komórka buduje z nich własne białka: rybosom łączy aminokwasy zgodnie z informacją mRNA. Nie przenosi gotowego białka z posiłku wprost do mięśnia.\n\nRybosom tworzy łańcuch białkowy. Kolorowe elementy są umownymi symbolami.\n\nKwasy tłuszczowe są substratami przemian tlenowych. Aminokwasy również mogą uczestniczyć w metabolizmie energetycznym, więc podział „paliwo” i „budulec” nie jest bezwzględny.\n\nOdbudowa fosfokreatyny\n\nPodczas regeneracji ATP dostarcza fosforan do odbudowy PCr. To odwrotny kierunek niż szybkie odtwarzanie ATP kosztem PCr w wysiłku.\n\nRegeneracja\nKreatyna + ATP\n→\nPCr + ADP\n\nStanowisko ISSN opisuje korzyści kreatyny m.in. w powtarzanych intensywnych wysiłkach. Zwiększenie jej zasobu nie zastępuje glikogenu ani aminokwasów do budowy białek.\n\nKreider i wsp. (2017)\nBibliografia"
+    },
+    {
+      "id": "adaptation",
+      "step": 0,
+      "words": 109,
+      "text": "ENERGIA I ADAPTACJA · TEORIA\n\nBodziec uruchamia przebudowę\n\nHipertrofia to powiększanie włókien mięśniowych po okresie treningu. Powtarzany bodziec mechaniczny uruchamia przebudowę białek; jej wynik zależy od tworzenia i rozkładu w czasie.\n\nDwa równoczesne procesy w komórce. Strzałki nie mają skali ilościowej.\n\nWzrost syntezy białek po jednej sesji może obejmować naprawę i przebudowę, więc nie mówi wprost, o ile urośnie mięsień.\n\nW 10-tygodniowym badaniu Damas i wsp. związek zintegrowanej syntezy białek z hipertrofią pojawił się po osłabieniu uszkodzeń treningowych. Pojedynczy wczesny pomiar nie wystarczał.\n\nDamas i wsp. (2016)\n\nSiła może rosnąć także dzięki koordynacji, technice i zmianom sterowania nerwowego. Jej przyrost nie musi być proporcjonalny do zmiany rozmiaru mięśnia.\n\nBibliografia"
+    },
+    {
+      "id": "adaptation",
+      "step": 1,
+      "words": 102,
+      "text": "ENERGIA I ADAPTACJA · TEORIA\n\nRegeneracja nie ma jednego wskaźnika\n\nPompa jest przejściową zmianą przepływu krwi i płynów po wysiłku. Hipertrofię ocenia się po czasie, w porównywalnych warunkach i poza ostrym obrzmieniem po sesji.\n\nZbliżenie naczynia i przepływu po sesji.\n\nBolesność następnego dnia także nie mierzy wzrostu. Odtwarzanie substratów, naprawa struktur i odzyskiwanie sprawności mogą przebiegać w różnym tempie; brak bólu nie oznacza pełnej regeneracji każdego procesu.\n\nLamon i wsp.: 13 młodych dorosłych, badanie krzyżowe, jedna noc całkowicie bez snu. Zmierzono niższą ostrą syntezę białek mięśniowych. Nie mierzono hipertrofii po miesiącach ani skutku skrócenia snu o godzinę.\n\nLamon i wsp. (2021)\nBibliografia"
+    },
+    {
+      "id": "testosterone",
+      "step": 0,
+      "words": 71,
+      "text": "REGULACJA I DOWODY · TEORIA\n\nTrzy piętra regulacji\n\nOś HPG łączy podwzgórze, przysadkę i gonady — tutaj jądra. Podwzgórze leży w dolnej części mózgu, a przysadka poniżej niego, połączona szypułą.\n\nZbliżenie dwóch struktur mózgu uczestniczących w osi.\n\nPodwzgórze wydziela pulsacyjnie GnRH (gonadoliberynę). Pobudza to przysadkę do wydzielania LH (hormonu luteinizującego). LH dociera z krwią do komórek Leydiga, które produkują testosteron.\n\nKomórki Leydiga leżą pomiędzy kanalikami nasiennymi. To powiększenie mikroskopowej struktury.\nBibliografia"
+    },
+    {
+      "id": "testosterone",
+      "step": 1,
+      "words": 104,
+      "text": "REGULACJA I DOWODY · TEORIA\n\nWynik wraca do układu sterującego\n\nTestosteron i powstający z jego części estradiol uczestniczą w ujemnym sprzężeniu zwrotnym: ograniczają dalsze pobudzanie osi w podwzgórzu i przysadce.\n\nNiebieskie strzałki: pobudzanie; pomarańczowa droga: hamowanie. Złote kółka są symbolem hormonu, nie jego budową chemiczną.\n\nGdy sygnał zwrotny słabnie, w sprawnej osi może wzrosnąć pobudzanie przez GnRH i LH. Rzeczywista odpowiedź zależy też od rytmów wydzielania, opóźnień i sprawności narządów.\n\nSkojarzenie: Sprzężenie\n\nWest i wsp.: po 15 tygodniach większa ostra odpowiedź hormonalna nie dała dodatkowej hipertrofii ani siły trenowanych zginaczy. Wniosek dotyczy tego protokołu, nie braku biologicznego znaczenia hormonów.\n\nWest i wsp. (2010)\nBibliografia"
+    },
+    {
+      "id": "signals",
+      "step": 0,
+      "words": 106,
+      "text": "REGULACJA I DOWODY · TEORIA\n\nKomórka musi umieć odebrać sygnał\n\nHormon dociera z krwią, lecz odpowiedź wymaga odpowiedniego receptora. Insulina wiąże receptor w błonie komórki; wiele hormonów steroidowych działa przez receptory wewnątrz komórki. Dalsza odpowiedź zależy od tkanki.\n\nFioletowy receptor jest w błonie, turkusowy — wewnątrz komórki. Pomarańczowe elementy oznaczają sygnały. Kolory są umowne.\n\nW trzustce komórki beta wydzielają insulinę, wspierającą wykorzystanie i magazynowanie składników. Komórki alfa wydzielają glukagon, który pomaga wątrobie uwalniać glukozę do krwi.\n\nTrzustka i wskazane tkanki docelowe; narządy są w różnych skalach.\n\nGlukagon nie uruchamia rozpadu glikogenu mięśniowego tak jak wątrobowego. Wspólny sygnał we krwi nie oznacza identycznej reakcji każdego narządu.\n\nBibliografia"
+    },
+    {
+      "id": "signals",
+      "step": 1,
+      "words": 112,
+      "text": "REGULACJA I DOWODY · TEORIA\n\nStres i tempo przemian\nDwie części nadnercza\n\nRdzeń wydziela adrenalinę, uczestniczącą w szybkiej mobilizacji paliwa i odpowiedzi krążenia. Kora wydziela m.in. kortyzol. Jego działanie metaboliczne zależy od czasu i wielkości ekspozycji.\n\nNadnercze leży na nerce; jego kora otacza rdzeń.\nSkojarzenie: Kortyzol\nOś tarczycy\n\nPodwzgórze wydziela TRH, przysadka TSH, a pobudzona tarczyca w szyi — T3 i T4. Te hormony wpływają m.in. na ekspresję genów i tempo przemian oraz hamują wcześniejsze piętra osi.\n\nŚledź jedną oś od góry do dołu; znak poprzeczny oznacza hamowanie.\n\nKrótka odpowiedź na wysiłek, przewlekła ekspozycja i podanie leku to różne warunki. Samo „więcej hormonu” nie oznacza zawsze lepszego ani gorszego efektu treningowego.\n\nBibliografia"
+    },
+    {
+      "id": "evidence",
+      "step": 0,
+      "words": 85,
+      "text": "REGULACJA I DOWODY · TEORIA\n\nPlausybilny mechanizm to początek\n\nZnajomość mechanizmu pozwala postawić hipotezę, ale nie dowodzi, że program treningowy przyniesie dany efekt u ludzi. Korelacja oznacza współwystępowanie; nie rozstrzyga przyczyny.\n\nWspólny czynnik może wpływać na sen i wynik. Strzałki przedstawiają możliwe wyjaśnienie, nie wynik badania.\n\nRandomizacja, czyli losowy przydział do grup, ogranicza systematyczne różnice początkowe. Nie naprawia jednak złego pomiaru, małej próby ani nieprzestrzegania protokołu.\n\nOceniaj wielkość i niepewność efektu oraz sposób badania. Brak statystycznie istotnej różnicy nie jest automatycznie dowodem identycznych efektów.\n\nBibliografia"
+    },
+    {
+      "id": "evidence",
+      "step": 1,
+      "words": 127,
+      "text": "REGULACJA I DOWODY · TEORIA\n\nMierz to, o czym chcesz mówić\n\nSprawdź co, u kogo i kiedy zmierzono. Stężenie hormonu 30 minut po sesji jest innym wynikiem niż rozmiar mięśnia po tygodniach treningu. Wskaźnik pośredni nie zastępuje właściwego pomiaru efektu.\n\nOś czasu zestawia różne pomiary. Strzałka oznacza upływ czasu, nie związek przyczynowy.\n\nPodobnie poprawna odpowiedź zaraz po przeczytaniu tekstu nie dowodzi pamiętania tydzień później.\n\nDwie chwile sprawdzenia pamięci, rozdzielone przerwą.\n\nRoediger i Karpicke badali odtwarzanie z pamięci i późniejsze zapamiętanie. Metaanaliza Cepedy i wsp. wspiera rozłożenie nauki w czasie; konkretne odstępy tej aplikacji nie były testowane w tych badaniach.\n\nRoediger i Karpicke (2006)\n\nDlatego kurs łączy wybór odpowiedzi z wyjaśnieniem bez podglądania. Pierwsze sprawdza rozpoznanie zależności, drugie wymaga samodzielnego odtworzenia. Powtórka po przerwie sprawdza ich trwałość.\n\nBibliografia"
+    }
+  ],
+  "panels": [
+    {
+      "id": "biceps",
+      "step": 0,
+      "index": 0,
+      "plate": "movement",
+      "natural": [
+        1536,
+        1024
+      ],
+      "caption": "Porównaj ustawienie dłoni; łokieć pozostaje zgięty.",
+      "preceding": "P"
+    },
+    {
+      "id": "biceps",
+      "step": 0,
+      "index": 1,
+      "plate": "rotation",
+      "natural": [
+        1536,
+        1024
+      ],
+      "caption": "Tutaj łokcie są wyprostowane: przy supinacji dłoń jest skierowana do przodu. Niebieska kość to promieniowa.",
+      "preceding": "P"
+    },
+    {
+      "id": "biceps",
+      "step": 1,
+      "index": 0,
+      "plate": "biceps-attachments",
+      "region": [
+        0,
+        0,
+        1024,
+        503
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Bark: śledź dwa ścięgna od łopatki do mięśnia.",
+      "preceding": "P"
+    },
+    {
+      "id": "biceps",
+      "step": 1,
+      "index": 1,
+      "plate": "biceps-attachments",
+      "region": [
+        0,
+        1048,
+        1024,
+        488
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Łokieć: jasne ścięgno kończy się na zaznaczonej części kości.",
+      "preceding": "P"
+    },
+    {
+      "id": "biceps",
+      "step": 1,
+      "index": 2,
+      "plate": "elbow-muscles",
+      "region": [
+        0,
+        505,
+        690,
+        463
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Mięsień ramienny: śledź dolne ścięgno do kości łokciowej.",
+      "preceding": "P"
+    },
+    {
+      "id": "biceps",
+      "step": 1,
+      "index": 3,
+      "plate": "elbow-muscles",
+      "region": [
+        0,
+        968,
+        690,
+        568
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Ramienno-promieniowy: koniec ścięgna leży przy nadgarstku.",
+      "preceding": "P"
+    },
+    {
+      "id": "torque",
+      "step": 1,
+      "index": 0,
+      "plate": "press-attachments",
+      "region": [
+        0,
+        0,
+        1024,
+        695
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Przyczep na kości ramiennej leży w pobliżu barku.",
+      "preceding": "P"
+    },
+    {
+      "id": "torque",
+      "step": 1,
+      "index": 1,
+      "plate": "press-attachments",
+      "region": [
+        0,
+        702,
+        1024,
+        834
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Trzy głowy dochodzą do wspólnego dalszego ścięgna.",
+      "preceding": "P"
+    },
+    {
+      "id": "sarcomere",
+      "step": 0,
+      "index": 0,
+      "plate": "sliding-filaments",
+      "natural": [
+        1650,
+        1510
+      ],
+      "caption": "Relaxed = rozluźniony; contracted = skrócony; Z line = linia Z. Porównaj oba stany.",
+      "preceding": "P"
+    },
+    {
+      "id": "sarcomere",
+      "step": 1,
+      "index": 0,
+      "plate": "calcium-atp",
+      "region": [
+        0,
+        0,
+        1024,
+        784
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Po lewej spoczynek; po prawej stan po związaniu wapnia.",
+      "preceding": "P"
+    },
+    {
+      "id": "sarcomere",
+      "step": 1,
+      "index": 1,
+      "plate": "calcium-atp",
+      "region": [
+        0,
+        789,
+        1024,
+        475
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Śledź cykl pojedynczej głowy, nie całego mięśnia.",
+      "preceding": "P"
+    },
+    {
+      "id": "motor",
+      "step": 0,
+      "index": 0,
+      "plate": "motor-labelled",
+      "region": [
+        0,
+        0,
+        1024,
+        652
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Trzy włókna są przykładem, a nie stałą wielkością jednostki.",
+      "preceding": "P"
+    },
+    {
+      "id": "motor",
+      "step": 0,
+      "index": 1,
+      "plate": "motor-units",
+      "natural": [
+        1024,
+        442
+      ],
+      "caption": "Kolor oznacza przynależność włókna do neuronu, nie typ włókna. Motor unit = jednostka; motor pool = pula neuronów mięśnia.",
+      "preceding": "P"
+    },
+    {
+      "id": "motor",
+      "step": 1,
+      "index": 0,
+      "plate": "motor-labelled",
+      "region": [
+        14,
+        662,
+        562,
+        617
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Każdy nowy neuron oznacza kolejną aktywną jednostkę.",
+      "preceding": "P"
+    },
+    {
+      "id": "motor",
+      "step": 1,
+      "index": 1,
+      "plate": "motor-labelled",
+      "region": [
+        584,
+        662,
+        428,
+        617
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Ten sam neuron, różne odstępy między impulsami. Kreski nie mają skali czasu.",
+      "preceding": "P"
+    },
+    {
+      "id": "energy",
+      "step": 0,
+      "index": 0,
+      "plate": "energy",
+      "natural": [
+        1536,
+        1024
+      ],
+      "caption": "Pomarańczowe mitochondria leżą między czerwonymi miofibrylami. Ilustracja nie pokazuje udziału systemów.",
+      "preceding": "P"
+    },
+    {
+      "id": "fuel",
+      "step": 0,
+      "index": 0,
+      "plate": "glycogen-cell-v1.4",
+      "natural": [
+        1536,
+        1024
+      ],
+      "caption": "Przekrój pojedynczego włókna. Złote kulki i powiększenie są symboliczne, bez skali.",
+      "preceding": "P"
+    },
+    {
+      "id": "fuel",
+      "step": 1,
+      "index": 0,
+      "plate": "nutrition",
+      "region": [
+        0,
+        0,
+        800,
+        1024
+      ],
+      "natural": [
+        1536,
+        1024
+      ],
+      "caption": "Rybosom tworzy łańcuch białkowy. Kolorowe elementy są umownymi symbolami.",
+      "preceding": "P"
+    },
+    {
+      "id": "adaptation",
+      "step": 0,
+      "index": 0,
+      "plate": "adaptation-labelled",
+      "region": [
+        0,
+        70,
+        1024,
+        550
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Dwa równoczesne procesy w komórce. Strzałki nie mają skali ilościowej.",
+      "preceding": "P"
+    },
+    {
+      "id": "adaptation",
+      "step": 1,
+      "index": 0,
+      "plate": "adaptation-labelled",
+      "region": [
+        14,
+        1085,
+        397,
+        410
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Zbliżenie naczynia i przepływu po sesji.",
+      "preceding": "P"
+    },
+    {
+      "id": "testosterone",
+      "step": 0,
+      "index": 0,
+      "plate": "hpg-labelled",
+      "region": [
+        0,
+        86,
+        675,
+        584
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Zbliżenie dwóch struktur mózgu uczestniczących w osi.",
+      "preceding": "P"
+    },
+    {
+      "id": "testosterone",
+      "step": 0,
+      "index": 1,
+      "plate": "hpg-labelled",
+      "region": [
+        340,
+        928,
+        435,
+        510
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Komórki Leydiga leżą pomiędzy kanalikami nasiennymi. To powiększenie mikroskopowej struktury.",
+      "preceding": "P"
+    },
+    {
+      "id": "testosterone",
+      "step": 1,
+      "index": 0,
+      "plate": "hpg-feedback-v1.4",
+      "natural": [
+        1122,
+        1402
+      ],
+      "caption": "Niebieskie strzałki: pobudzanie; pomarańczowa droga: hamowanie. Złote kółka są symbolem hormonu, nie jego budową chemiczną.",
+      "preceding": "P"
+    },
+    {
+      "id": "signals",
+      "step": 0,
+      "index": 0,
+      "plate": "signals",
+      "natural": [
+        1536,
+        1024
+      ],
+      "caption": "Fioletowy receptor jest w błonie, turkusowy — wewnątrz komórki. Pomarańczowe elementy oznaczają sygnały. Kolory są umowne.",
+      "preceding": "P"
+    },
+    {
+      "id": "signals",
+      "step": 0,
+      "index": 1,
+      "plate": "endocrine-labelled",
+      "region": [
+        14,
+        86,
+        594,
+        704
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Trzustka i wskazane tkanki docelowe; narządy są w różnych skalach.",
+      "preceding": "P"
+    },
+    {
+      "id": "signals",
+      "step": 1,
+      "index": 0,
+      "plate": "endocrine-labelled",
+      "region": [
+        614,
+        86,
+        399,
+        704
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Nadnercze leży na nerce; jego kora otacza rdzeń.",
+      "preceding": "P"
+    },
+    {
+      "id": "signals",
+      "step": 1,
+      "index": 1,
+      "plate": "endocrine-labelled",
+      "region": [
+        508,
+        860,
+        246,
+        646
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Śledź jedną oś od góry do dołu; znak poprzeczny oznacza hamowanie.",
+      "preceding": "P"
+    },
+    {
+      "id": "evidence",
+      "step": 0,
+      "index": 0,
+      "plate": "evidence-labelled",
+      "region": [
+        0,
+        404,
+        1024,
+        426
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Wspólny czynnik może wpływać na sen i wynik. Strzałki przedstawiają możliwe wyjaśnienie, nie wynik badania.",
+      "preceding": "P"
+    },
+    {
+      "id": "evidence",
+      "step": 1,
+      "index": 0,
+      "plate": "evidence-labelled",
+      "region": [
+        0,
+        1097,
+        1024,
+        223
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Oś czasu zestawia różne pomiary. Strzałka oznacza upływ czasu, nie związek przyczynowy.",
+      "preceding": "P"
+    },
+    {
+      "id": "evidence",
+      "step": 1,
+      "index": 1,
+      "plate": "evidence-labelled",
+      "region": [
+        0,
+        1320,
+        1024,
+        134
+      ],
+      "natural": [
+        1024,
+        1536
+      ],
+      "caption": "Dwie chwile sprawdzenia pamięci, rozdzielone przerwą.",
+      "preceding": "P"
+    }
+  ],
+  "tests": [
+    "20 ordered sections, no repeated glossary/mnemonic/chain layer",
+    "Every raster figure follows its contextual paragraph",
+    "Selected regions stay inside the actual source image",
+    "Every full-screen view fits and retains the selected region",
+    "Zoom/pan space and Back without changing lesson step",
+    "Home, quiz, recall and conclusion omit decorative raster images"
+  ],
+  "visibleWords": {
+    "before": 4917,
+    "after": 2161,
+    "reductionPercent": 56
+  }
+}
