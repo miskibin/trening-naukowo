@@ -151,8 +151,8 @@ try {
         '-I', $androidJar,
         '--min-sdk-version', '26',
         '--target-sdk-version', [string]$TargetSdk,
-        '--version-code', '5',
-        '--version-name', '1.4.0',
+        '--version-code', '6',
+        '--version-name', '1.5.0',
         '--java', $generatedDir,
         '-R', $resZip
     )

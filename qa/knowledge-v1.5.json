@@ -1,0 +1,113 @@
+{
+  "lessons": [
+    {
+      "id": "biceps",
+      "knowledgeQuestions": 3,
+      "score": 2
+    },
+    {
+      "id": "torque",
+      "knowledgeQuestions": 3,
+      "score": 3
+    },
+    {
+      "id": "sarcomere",
+      "knowledgeQuestions": 3,
+      "score": 3
+    },
+    {
+      "id": "motor",
+      "knowledgeQuestions": 3,
+      "score": 3
+    },
+    {
+      "id": "energy",
+      "knowledgeQuestions": 3,
+      "score": 3
+    },
+    {
+      "id": "fuel",
+      "knowledgeQuestions": 3,
+      "score": 3
+    },
+    {
+      "id": "adaptation",
+      "knowledgeQuestions": 3,
+      "score": 3
+    },
+    {
+      "id": "testosterone",
+      "knowledgeQuestions": 3,
+      "score": 3
+    },
+    {
+      "id": "signals",
+      "knowledgeQuestions": 3,
+      "score": 3
+    },
+    {
+      "id": "evidence",
+      "knowledgeQuestions": 3,
+      "score": 3
+    }
+  ],
+  "reviews": [
+    {
+      "id": "biceps",
+      "success": true,
+      "days": 3
+    },
+    {
+      "id": "torque",
+      "success": false,
+      "days": 1
+    },
+    {
+      "id": "sarcomere",
+      "success": false,
+      "days": 1
+    },
+    {
+      "id": "motor",
+      "success": true,
+      "days": 3
+    },
+    {
+      "id": "energy",
+      "success": true,
+      "days": 3
+    },
+    {
+      "id": "fuel",
+      "success": true,
+      "days": 3
+    },
+    {
+      "id": "adaptation",
+      "success": true,
+      "days": 3
+    },
+    {
+      "id": "testosterone",
+      "success": true,
+      "days": 3
+    },
+    {
+      "id": "signals",
+      "success": true,
+      "days": 3
+    },
+    {
+      "id": "evidence",
+      "success": true,
+      "days": 3
+    }
+  ],
+  "tests": [
+    "Quiz selection, shuffled order, wrong grade and question index survive reload and Back",
+    "All ten lessons completed through UI, 20 practical contexts, graded knowledge with answer explanations, no open/observation prompts",
+    "Early practice neither counts as delayed success nor changes the due date",
+    "Different review questions for every lesson; first-answer errors and knowledge errors schedule one day, independent successes three days",
+    "No JavaScript errors, failed assets or horizontal overflow at phone, landscape and desktop widths"
+  ]
+}

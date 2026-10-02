@@ -50,7 +50,8 @@ const TEACHING={
   picture('calcium-atp','Po lewej spoczynek; po prawej stan po związaniu wapnia.',[0,0,1024,784]),
   paragraph('W cyklu mostka <b>przyłączenie ATP odłącza głowę miozyny od aktyny</b>. Rozkład ATP do ADP i fosforanu nieorganicznego (Pi) przygotowuje głowę do kolejnego cyklu; uwolnienie produktów wiąże się z wytwarzaniem ruchu i siły.'),
   picture('calcium-atp','Śledź cykl pojedynczej głowy, nie całego mięśnia.',[0,789,1024,475]),
-  paragraph('Pompy zużywające ATP przenoszą Ca²⁺ z powrotem do siateczki. Gdy jego stężenie spada, miejsca na aktynie znów są osłaniane. <b>Rozluźnienie również wymaga energii.</b>')
+  paragraph('Pompy zużywające ATP przenoszą Ca²⁺ z powrotem do siateczki. Gdy jego stężenie spada, miejsca na aktynie znów są osłaniane. <b>Rozluźnienie również wymaga energii.</b>'),
+  paragraph('W pracy <b>koncentrycznej</b> mięsień skraca się pod obciążeniem; w <b>ekscentrycznej</b> wytwarza napięcie podczas wydłużania.')
  ]],
  motor:[[
   paragraph('<b>Jednostka motoryczna</b> to jeden neuron ruchowy i wszystkie włókna mięśniowe, które unerwia. Jego <b>akson</b>, długa wypustka przewodząca impulsy, rozgałęzia się do tych włókien.'),
@@ -144,7 +145,7 @@ const TEACHING={
   paragraph('Podobnie poprawna odpowiedź zaraz po przeczytaniu tekstu nie dowodzi pamiętania tydzień później.'),
   picture('evidence-labelled','Dwie chwile sprawdzenia pamięci, rozdzielone przerwą.',[0,1320,1024,134]),
   study('retrieval','Roediger i Karpicke badali odtwarzanie z pamięci i późniejsze zapamiętanie. Metaanaliza Cepedy i wsp. wspiera rozłożenie nauki w czasie; konkretne odstępy tej aplikacji nie były testowane w tych badaniach.'),
-  paragraph('Dlatego kurs łączy wybór odpowiedzi z wyjaśnieniem bez podglądania. Pierwsze sprawdza rozpoznanie zależności, drugie wymaga samodzielnego odtworzenia. Powtórka po przerwie sprawdza ich trwałość.')
+  paragraph('Test od razu po lekcji sprawdza świeżo poznane pojęcia. Inne pytania w powtórce po przerwie sprawdzają, czy nadal rozpoznajesz poprawne zależności bez czytania teorii.')
  ]]
 };
 const TEACH_FILES={rotation:{src:'images/art/rotation-labelled.png',credit:'Adaptacja za OpenStax · Fundamentals of Nursing, 22.1 · CC BY-NC-SA 4.0'}};

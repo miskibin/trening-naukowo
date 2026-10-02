@@ -8,7 +8,7 @@ Z katalogu głównego projektu uruchom:
 .\build.ps1
 ```
 
-Wynik trafia do `android\build\TreningNaukowo.apk`. Skrypt podpisuje go lokalnym kluczem debug przeznaczonym do instalacji na własnym urządzeniu. Debugowanie zawartości WebView jest domyślnie wyłączone; włączysz je przełącznikiem `-EnableWebViewDebug`.
+Wynik trafia do `android\build\TreningNaukowo.apk`. Skrypt podpisuje go kluczem z `android/build/debug.keystore`. Zachowaj oryginalny klucz poprzedniego wydania, aby aktualizacja mogła zastąpić istniejącą instalację. Nowo wygenerowany klucz nie zastąpi oficjalnego APK. Debugowanie zawartości WebView jest domyślnie wyłączone; włączysz je przełącznikiem `-EnableWebViewDebug`.
 
 Domyślny target SDK to najwyższy lokalnie dostępny poziom nieprzekraczający API 35, a minimalny SDK to API 26. Można wskazać inną lokalnie zainstalowaną platformę przez `-TargetSdk` albo SDK przez `-SdkRoot`.
 
