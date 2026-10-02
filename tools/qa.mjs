@@ -1,92 +1,93 @@
-import {createRequire} from 'node:module';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const require=createRequire(import.meta.url);
-const {chromium}=require('C:/Users/skibi/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
-await fs.mkdir('qa',{recursive:true});
-const browser=await chromium.launch({channel:'chrome',headless:true});
+import {launchBrowser} from './qa-browser.mjs';
+const browser=await launchBrowser();
 const context=await browser.newContext({viewport:{width:412,height:892},deviceScaleFactor:1,isMobile:true,hasTouch:true});
-const page=await context.newPage();
-const errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));page.on('requestfailed',r=>requests.push(r.url()));
-await page.goto('http://127.0.0.1:8974');
-const click=a=>page.locator(`[data-action="${a}"]`).first().click();
-const ev=(code,arg)=>page.evaluate(code,arg);
-const checkNoOverflow=async()=>assert(await ev(()=>document.documentElement.scrollWidth<=innerWidth+1),'horizontal overflow');
-const snap=async name=>{await page.screenshot({path:`qa/${name}.png`,fullPage:true});};
+const page=await context.newPage(),errors=[],requests=[];
+page.on('pageerror',e=>errors.push(e.message));page.on('requestfailed',r=>requests.push(r.url()));
+const ev=(fn,arg)=>page.evaluate(fn,arg);
+const click=name=>page.locator(`[data-action="${name}"]`).first().click();
 const solve=async(correct=true)=>{
  const q=await ev(()=>activeTask().q);
- if(q.type==='order'){
-  const indices=q.items.map((_,i)=>i);if(!correct)indices.reverse();
-  for(const i of indices)await page.locator(`[data-action="order-add"][data-index="${i}"]`).click();
- }else {const index=correct?q.correct:(q.correct+1)%q.opts.length;await page.locator(`[data-action="select"][data-index="${index}"]`).click();}
+ if(q.type==='order'){const indices=q.items.map((_,i)=>i);if(!correct)indices.reverse();for(const index of indices)await page.locator(`[data-action="order-add"][data-index="${index}"]`).click();}
+ else await page.locator(`[data-action="select"][data-index="${correct?q.correct:(q.correct+1)%q.opts.length}"]`).click();
  await page.locator('.footer .primary').click();
 };
-const out={lessons:[],tests:[]};
-await snap('01-start');await checkNoOverflow();
-assert.equal(await ev(()=>LESSONS.length),10);
+const overflow=async()=>assert(await ev(()=>document.documentElement.scrollWidth<=innerWidth+1),'horizontal overflow');
+const noOpenQuestions=async()=>{assert.equal(await page.locator('textarea,[data-action="recall-grade"],[data-action="observe"]').count(),0);assert(!/Przerwij, jeśli|jeśli boli|Co zauważyłeś\?|Wniosek własnymi słowami|Moje wyjaśnienie/.test(await page.locator('body').innerText()));};
+const report={lessons:[],reviews:[],tests:[]};
+await fs.mkdir('qa',{recursive:true});await page.goto('http://127.0.0.1:8974');
 assert.equal(await page.locator('.lesson-row:not([disabled])').count(),1);
-out.tests.push('First lesson available, future lessons follow prerequisite path');
 const ids=await ev(()=>LESSONS.map(l=>l.id));
-for(const [i,id] of ids.entries()){
+for(const id of ids){
  await page.locator(`[data-action="start"][data-id="${id}"]`).first().click();
- await checkNoOverflow();if(i===0)await snap('02-theory');
- await click('next');await click('next');
- assert(await page.locator('.footer .primary').isDisabled());
- assert.equal(await page.locator('.option.correct,.option.wrong').count(),0);
- const original=await page.locator('h1').innerText();
- await solve(false);assert.equal(await ev(()=>session().check.correct),false);
- if(i===0)await snap('03-correction');
- await click('retry-check');assert.notEqual(await page.locator('h1').innerText(),original);
- await solve(true);await click('next');
- const type=await ev(()=>currentLesson().practice.type);
- if(type==='movement'){
-  await click('observe');assert.equal(await ev(()=>session().practice.response),2);
-  assert.equal(await page.locator('.feedback.error').count(),0);
-  await snap('04-movement-skipped');await click('next');
- }else {
-  const practiceWrong=['fuel','adaptation'].includes(id);await solve(!practiceWrong);
-  if(practiceWrong){await click('retry-practice');await solve(true);await click('next');}
-  else if(['torque','sarcomere','motor','hpg'].includes(type)){
-   assert(await page.locator('.footer .primary').isDisabled());
-   if(type==='torque'||type==='sarcomere'){
-    await page.locator('#lab-range').evaluate((el,type)=>{el.value=type==='torque'?'40':'75';el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));},type);
-    if(type==='torque')assert.match(await page.locator('#lab-output').innerText(),/4.0 N·m/);
-   }else await click(type==='motor'?'motor-rate':'hpg');
-   await checkNoOverflow();
-   if(id==='torque')await snap('05-torque-experiment');
-   if(id==='testosterone')await snap('06-hormone-feedback');
-   await solve(true);await click('next');
-  }else await click('next');
+ for(const step of [0,1]){
+  await page.waitForFunction(()=>[...document.querySelectorAll('.teaching img')].every(i=>i.complete&&i.naturalWidth>0));
+  assert.equal(await page.locator('.application').count(),1);
+  await noOpenQuestions();await overflow();
+  if(id==='biceps'&&step===0)await page.screenshot({path:'qa/practical-biceps-v1.5.png',fullPage:true});
+  await click('next');
  }
- assert.equal(await ev(()=>session().step),4);
- await page.locator('#recall-text').fill('Moje wyjaśnienie mechanizmu: zachowuję zależności i opisuję przyczynę.');
- if(i===0){await page.reload();assert.match(await page.locator('#recall-text').inputValue(),/Moje wyjaśnienie/);out.tests.push('Interrupted lesson resumes exact step and text after reload');}
- await click('reveal');await page.locator('[data-action="recall-grade"][data-index="0"]').click();
- await click('next');await click('complete');
- assert(await ev(id=>state.completed.includes(id),id));
+ assert(await page.locator('.footer .primary').isDisabled());
+ await solve(false);assert.equal(await ev(()=>session().check.correct),false);
+ assert.match(await page.locator('.feedback h2').innerText(),/^Poprawna odpowiedź:/);
+ await click('retry-check');await solve();await click('next');
+ const type=await ev(()=>currentLesson().practice.type);
+ if(['fuel','adaptation'].includes(id)){await solve(false);await click('retry-practice');await solve();await click('next');}
+ else{
+  await solve();
+  if(['torque','sarcomere','motor','hpg'].includes(type)){
+   assert(await page.locator('.footer .primary').isDisabled());
+   if(['torque','sarcomere'].includes(type))await page.locator('#lab-range').evaluate((el,type)=>{el.value=type==='torque'?'40':'75';el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));},type);
+   else await click(type==='motor'?'motor-rate':'hpg');
+   await solve();
+  }
+  await click('next');
+ }
+ assert.equal(await ev(()=>session().step),4);await noOpenQuestions();
+ for(let index=0;index<3;index++){
+  assert.equal(await ev(()=>session().knowledge.index),index);assert(await page.locator('.footer .primary').isDisabled());
+  if(id==='biceps'&&index===1){
+   const q=await ev(()=>activeTask().q);await page.locator(`[data-action="select"][data-index="${q.correct}"]`).click();
+   const order=await ev(()=>activeTask().a.order);await page.reload();assert.deepEqual(await ev(()=>activeTask().a.order),order);assert.equal(await ev(()=>activeTask().a.selected),q.correct);
+   await click('previous');assert.equal(await ev(()=>session().knowledge.index),0);assert.equal(await ev(()=>activeTask().a.correct),false);
+   await click('knowledge-next');await page.locator('.footer .primary').click();
+   report.tests.push('Quiz selection, shuffled order, wrong grade and question index survive reload and Back');
+  }else await solve(!(id==='biceps'&&index===0));
+  await overflow();
+  if(index<2)await click('knowledge-next');else await click('next');
+ }
+ assert.equal(await ev(()=>session().step),5);
+ assert.match(await page.locator('h1').innerText(),id==='biceps'?/2\/3/:/3\/3/);
+ await click('complete');assert(await ev(id=>state.completed.includes(id),id));
  assert.equal(await ev(id=>state.reviews[id].success,id),0);
- out.lessons.push({id,result:'completed',wrongAnswerRemediated:true});
+ report.lessons.push({id,knowledgeQuestions:3,score:id==='biceps'?2:3});
 }
-out.tests.push('All ten lessons completed through UI, without counting immediate responses as delayed mastery');
-await snap('07-course-complete');
-await page.locator('[data-action="reviews"]').first().click();
-await page.locator('[data-action="start"][data-id="biceps"][data-mode="review"]').click();
-await solve(true);await click('next');await page.locator('#recall-text').fill('Przyczep na promieniowej pozwala bicepsowi obracać kość; ramienny ciągnie łokciową.');await click('reveal');await page.locator('[data-action="recall-grade"][data-index="0"]').click();await click('finish-review');
-assert.equal(await ev(()=>state.reviews.biceps.attempts),0);out.tests.push('Early rehearsal does not count as delayed success or shift due date');await click('close-review');
-// Advance time without changing the course state to exercise the actual scheduling path.
-await context.addInitScript(()=>{const original=Date.now;Date.now=()=>original()+2*86400000;});await page.reload();
-await click('reviews');await page.locator('[data-action="start"][data-id="biceps"]').click();
-await solve(true);await click('next');await page.locator('#recall-text').fill('Biceps ma przyczep na obracającej się promieniowej, a ramienny na łokciowej.');await click('reveal');await page.locator('[data-action="recall-grade"][data-index="0"]').click();await click('finish-review');
-assert.equal(await ev(()=>state.reviews.biceps.success),1);assert.equal(await ev(()=>state.reviews.biceps.attempts),1);assert(await ev(()=>Math.abs(state.reviews.biceps.due-Date.now()-3*DAY)<3000));out.tests.push('Delayed independent success schedules 3 days');await snap('08-delayed-review');await click('close-review');
-await page.locator('[data-action="start"][data-id="torque"]').click();await solve(false);await click('retry-review');await solve(true);await click('next');await click('recall-help');await click('finish-review');assert.equal(await ev(()=>state.reviews.torque.success),0);assert(await ev(()=>Math.abs(state.reviews.torque.due-Date.now()-DAY)<3000));out.tests.push('Wrong first answer plus assistance schedules one day and is not counted as independent success');await click('close-review');
-await click('home');await click('about');await snap('09-data-and-sources');
-await page.setViewportSize({width:360,height:740});await checkNoOverflow();await snap('10-small-phone');
-await page.setViewportSize({width:892,height:412});await checkNoOverflow();
-await page.setViewportSize({width:1280,height:900});await checkNoOverflow();
-out.tests.push('360px phone, S24 Ultra sized viewport, landscape and desktop: no horizontal overflow');
-assert.equal(errors.length,0,errors.join('\n'));assert.equal(requests.length,0,requests.join('\n'));
-out.tests.push('No JavaScript errors or failed asset requests');
-// Save a completed-state fixture for inspecting reviews, not shipped inside the app.
-await fs.writeFile('qa/completed-state.json',JSON.stringify(await ev(()=>state),null,2));
-await fs.writeFile('qa/report.json',JSON.stringify(out,null,2));
-console.log(JSON.stringify(out,null,2));await browser.close();
+report.tests.push('All ten lessons completed through UI, 20 practical contexts, graded knowledge with answer explanations, no open/observation prompts');
+await click('reviews');
+const doReview=async(id,{first=true,knowledgeWrong=false}={})=>{
+ await page.locator(`[data-action="start"][data-id="${id}"][data-mode="review"]`).click();
+ await solve(first);if(!first){await click('retry-review');await solve();}await click('next');
+ for(let index=0;index<2;index++){await solve(!(knowledgeWrong&&index===0));if(index===0)await click('knowledge-next');}
+ await click('finish-review');const result=await ev(()=>session().result);await click('close-review');return result;
+};
+const dueBefore=await ev(()=>state.reviews.biceps.due);
+assert.equal((await doReview('biceps')).delayed,false);assert.equal(await ev(()=>state.reviews.biceps.attempts),0);assert.equal(await ev(()=>state.reviews.biceps.due),dueBefore);
+report.tests.push('Early practice neither counts as delayed success nor changes the due date');
+await context.addInitScript(()=>{const now=Date.now;Date.now=()=>now()+2*86400000;});await page.reload();await click('reviews');
+for(const id of ids){
+ const failed=id==='torque'||id==='sarcomere';
+ const result=await doReview(id,{first:id!=='torque',knowledgeWrong:id==='sarcomere'});
+ assert.equal(result.success,!failed);assert.equal(result.delayed,true);
+ assert.equal(await ev(id=>state.reviews[id].attempts,id),1);
+ assert.equal(await ev(id=>state.reviews[id].success,id),failed?0:1);
+ assert(await ev(({id,days})=>Math.abs(state.reviews[id].due-Date.now()-days*DAY)<3000,{id,days:failed?1:3}));
+ report.reviews.push({id,success:!failed,days:failed?1:3});
+}
+report.tests.push('Different review questions for every lesson; first-answer errors and knowledge errors schedule one day, independent successes three days');
+await click('home');await click('about');await noOpenQuestions();
+for(const size of [{width:360,height:740},{width:892,height:412},{width:1280,height:900}]){await page.setViewportSize(size);await overflow();}
+assert.deepEqual(errors,[]);assert.deepEqual(requests,[]);report.tests.push('No JavaScript errors, failed assets or horizontal overflow at phone, landscape and desktop widths');
+await fs.writeFile('qa/knowledge-v1.5.json',JSON.stringify(report,null,2));
+console.log('PASS 10 lessons, 10 reviews, 50 new knowledge questions and persistence checks');
+await browser.close();

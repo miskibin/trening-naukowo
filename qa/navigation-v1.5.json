@@ -1,0 +1,112 @@
+{
+  "tests": [
+    "Legacy self-assessment becomes a graded quiz without losing completed lessons, dates, history, model settings or earlier answers; completion cannot bypass the quiz",
+    "Unfinished legacy completion screen returns to the new quiz before allowing completion",
+    "Ungraded legacy movement observation cannot count as a correct practice answer",
+    "Completed review records once and Back returns to reviews without reopening its editable result",
+    "System Back closes the illustration before leaving a step; Exit preserves the exact lesson step"
+  ],
+  "coverage": [
+    {
+      "id": "biceps",
+      "step": 0,
+      "application": "Uginanie z obrotem: patrz na przedramię"
+    },
+    {
+      "id": "biceps",
+      "step": 1,
+      "application": "Hantle, młotki czy sztanga?"
+    },
+    {
+      "id": "torque",
+      "step": 0,
+      "application": "Wznosy bokiem: kilogramy nie wystarczą"
+    },
+    {
+      "id": "torque",
+      "step": 1,
+      "application": "Rozpiętki nie zastępują wyprostu łokcia"
+    },
+    {
+      "id": "sarcomere",
+      "step": 0,
+      "application": "Pauza jest częścią obciążenia"
+    },
+    {
+      "id": "sarcomere",
+      "step": 1,
+      "application": "Opuszczanie też jest pracą mięśnia"
+    },
+    {
+      "id": "motor",
+      "step": 0,
+      "application": "Progres w nowym ćwiczeniu"
+    },
+    {
+      "id": "motor",
+      "step": 1,
+      "application": "Liczba powtórzeń i zapas"
+    },
+    {
+      "id": "energy",
+      "step": 0,
+      "application": "Stoper między seriami"
+    },
+    {
+      "id": "energy",
+      "step": 1,
+      "application": "Kolejna seria spadła z 8 do 5 powtórzeń"
+    },
+    {
+      "id": "fuel",
+      "step": 0,
+      "application": "Krótka przerwa nie resetuje całej sesji"
+    },
+    {
+      "id": "fuel",
+      "step": 1,
+      "application": "Czytaj ilość białka, nie masę proszku"
+    },
+    {
+      "id": "adaptation",
+      "step": 0,
+      "application": "Dwa osobne zapisy: wynik i rozmiar"
+    },
+    {
+      "id": "adaptation",
+      "step": 1,
+      "application": "Pomiar obwodu przed czy po treningu?"
+    },
+    {
+      "id": "testosterone",
+      "step": 0,
+      "application": "Rozpoznaj obietnicę „pobudzenia osi”"
+    },
+    {
+      "id": "testosterone",
+      "step": 1,
+      "application": "Dodatkowe serie tylko dla „piku hormonów”?"
+    },
+    {
+      "id": "signals",
+      "step": 0,
+      "application": "Superseria biceps–triceps"
+    },
+    {
+      "id": "signals",
+      "step": 1,
+      "application": "„Kortyzol po treningu” nie ocenia programu"
+    },
+    {
+      "id": "evidence",
+      "step": 0,
+      "application": "„30% większy przyrost”: ile to jest?"
+    },
+    {
+      "id": "evidence",
+      "step": 1,
+      "application": "Porównuj ten sam test, w tym samym miejscu sesji"
+    }
+  ],
+  "errors": []
+}
